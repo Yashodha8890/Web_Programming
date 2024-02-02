@@ -1,6 +1,5 @@
 # Asian Delight Restaurant - Team 14
-A brief description of your web development project.
-
+our project is about a restaurant.
 ## Table of Contents
 Features
 Database Tables
