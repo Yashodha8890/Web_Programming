@@ -188,22 +188,22 @@ img
 
 .slide-1
 {
-    background: url(images/HeroSection/slide1.jpg);
+    background: url(images/hero_section/slide1.jpg);
 }
 
 .slide-2
 {
-    background: linear-gradient(rgba(128, 124, 124,0.2),rgb(166, 162, 162)), url(images/HeroSection/slide2.jpeg);
+    background: linear-gradient(rgba(128, 124, 124,0.2),rgb(166, 162, 162)), url(images/hero_section/slide2.jpeg);
 }
 
 .slide-3
 {
-    background: linear-gradient(rgba(193, 191, 191, 0.2),rgb(221, 211, 211)), url(images/HeroSection/slide3.jpeg);
+    background: linear-gradient(rgba(193, 191, 191, 0.2),rgb(221, 211, 211)), url(images/hero_section/slide3.jpeg);
 }
 
 .slide-4
 {
-    background: linear-gradient(rgba(128, 124, 124,0.2),rgb(166, 162, 162)), url(images/HeroSection/slide4.jpeg);
+    background: linear-gradient(rgba(128, 124, 124,0.2),rgb(166, 162, 162)), url(images/hero_section/slide4.jpeg);
 }
 
 /*------Hero section styles ends here------*/
@@ -247,7 +247,7 @@ img
 
 .about-bg
 {
-    background-image: url(Images/About/background.jpg);    
+    background-image: url(images/about/background.jpg);    
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -398,7 +398,7 @@ img, .image-button
 /*-----Contact us section styles starts here----*/
 .contactSection
 {
-    background: url(images/ContactUs/background.jpg);
+    background: url(images/contact_us/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
@@ -408,7 +408,7 @@ img, .image-button
 /*---- Footer section styles starts here-----*/
 footer
 {
-    background-image: url(images/Footer/footer_banner.png);    
+    background-image: url(images/footer/footer_banner.png);    
     color: rgb(242, 239, 235);
     font-size: 12px;
     height: 300px;
