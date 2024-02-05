@@ -26,6 +26,7 @@ With the Order Online feature, Asian Delight Restaurant users can order their fo
 
 ### Feature 2
 Handling member resistration & login with different user levels : <br>
+In the registration feature, the website will allow users to register with Asian delight restaurant. A member ID is created for each registered user. A registered member can do other functions after logged into the account. By doing this, it is easy to administrators to manage user accounts and previlages.
 <br> Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ### Feature 3
