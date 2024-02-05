@@ -35,7 +35,7 @@ Include more detailed information about Feature 3 here. <br>
 
 ### Feature 4
 Handling customer feedbacks and ratings : <br>
-Include more detailed information about Feature 3 here. <br>
+In this feature, Collecting customer's Messages(Feedbacks),Complaints and reviews. If the user is not a registered member refer to the register form.<br>
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ## Database Tables
