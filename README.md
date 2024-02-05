@@ -31,7 +31,7 @@ In the registration feature, the website will allow users to register with Asian
 
 ### Feature 3
 Handling services and booking events : <br>
-Include more detailed information about Feature 3 here. <br>
+With the feature of services and event booking, website users can book their private events and access services through the website. When booking private events or accessing services, users are required to become members of the website first. If they are not members they will direct to registration form. <br>
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ### Feature 4
