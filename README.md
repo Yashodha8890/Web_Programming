@@ -1,5 +1,7 @@
 # Asian Delight Restaurant - Team 14
-our project is about a restaurant of Asian Delights.new content
+Our Project is creating a website for a conceptual restaurent called, Asian Delight Restaurant. This website is mainly focusing on providing an interesrt for the people who are loving to enjoy the Asian taste. <br>
+This website is being built using couple of web development related client side and server side scripting laguages and design methodologies like, HTML,CSS,javaScript,Bootstap,php & mysql.
+
 ## Table of Contents
 Features
 Database Tables
@@ -9,19 +11,32 @@ Created Tables
 ## Features
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
- Feature 1 (Full Name): Title of the feature.
- Feature 2 (Full Name): Title of the feature.
- Feature 3 (Full Name): Title of the feature.
-Add features as required.
+ Feature 1 (Yashodha Amarasinghe): Handling Online Order function including the shopping cart.<br>
+ Feature 2 (Mayuri Yashodha): Handling member resistration & login with different user levels.<br>
+ Feature 3 (Udashi Jayaneththi): Handling services and booking events.<br>
+ Feature 4 (Kapila Bandara): Handling customer feedbacks and reviews.<br>
+ Feature 5 (Member name): Handling Table reservation.<br>
+ Feature 6 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
+ Feature 7 (Member name): Handling member details(Update/Delete).<br>
 
 ### Feature 1
-Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+Handling Online Order function including the shopping cart :<br>
+With the Order Online feature, Asian Delight Restaurant users can order their food through the website. If the user is not a member, then he or she will be directing to Member Registration while members can log in to the website and add their items to the shopping cart. Once they are done with their selection they can do checkout and print the order as PDF. If the user wants to remove any added item from the cart he/she can remove them before performing the checkout. <br>
+<br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .<br>
 
 ### Feature 2
-Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+Handling member resistration & login with different user levels : <br>
+<br> Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ### Feature 3
-Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+Handling services and booking events : <br>
+Include more detailed information about Feature 3 here. <br>
+<br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
+### Feature 4
+Handling customer feedbacks and ratings : <br>
+Include more detailed information about Feature 3 here. <br>
+<br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ## Database Tables
 List the database tables that are part of your project.
