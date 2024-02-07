@@ -48,7 +48,8 @@ Table 2 (Yashodha Amarasinghe): food_items
 Table 3 (Yashodha Amarasinghe): oderDetails
 Table 4 (member): table name
 Table 5 (member): table name
-Table 6 (member): table name
+Table 6 (udashi Jayaneththi): events_booking
+Table 6 (udashi Jayaneththi): delivery
 Include the ER Diagram of the database.
 
 ## Created Forms
