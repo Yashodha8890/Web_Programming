@@ -15,7 +15,7 @@ In this section, list and describe the features or functionality that you are wo
  Feature 2 (Mayuri Yashodha): Handling member resistration & login with different user levels.<br>
  Feature 3 (Udashi Jayaneththi): Handling services and booking events.<br>
  Feature 4 (Kapila Bandara): Handling customer feedbacks and reviews.<br>
- Feature 5 (Member name): Handling Table reservation.<br>
+ Feature 5 (Mayuri Yashodha): Handling Table reservation.<br>
  Feature 6 (Yashodha Amarasinghe):Managing food item details as the admin user.<br>
  Feature 7 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
  Feature 8 (Member name): Handling member details(Update/Delete).<br>
@@ -46,10 +46,16 @@ List the database tables that are part of your project.
 Table 1 (Yashodha Amarasinghe): food_categores
 Table 2 (Yashodha Amarasinghe): food_items
 Table 3 (Yashodha Amarasinghe): oderDetails
+<<<<<<< HEAD
 Table 4 (member): table name
 Table 5 (member): table name
 Table 6 (udashi Jayaneththi): events_booking
 Table 6 (udashi Jayaneththi): delivery
+=======
+Table 4 (Mayuri Yashodha): Registration_form
+Table 5 (Mayuri Yashodha): table_reservation
+Table 6 (member): table name
+>>>>>>> 6504971c0ffe33be3c2ea406d695631b1d64ff18
 Include the ER Diagram of the database.
 
 ## Created Forms
