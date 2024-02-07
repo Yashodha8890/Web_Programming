@@ -16,8 +16,9 @@ In this section, list and describe the features or functionality that you are wo
  Feature 3 (Udashi Jayaneththi): Handling services and booking events.<br>
  Feature 4 (Kapila Bandara): Handling customer feedbacks and reviews.<br>
  Feature 5 (Member name): Handling Table reservation.<br>
- Feature 6 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
- Feature 7 (Member name): Handling member details(Update/Delete).<br>
+ Feature 6 (Yashodha Amarasinghe):Managing food item details as the admin user.<br>
+ Feature 7 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
+ Feature 8 (Member name): Handling member details(Update/Delete).<br>
 
 ### Feature 1
 Handling Online Order function including the shopping cart :<br>
@@ -42,9 +43,12 @@ In this feature, Collecting customer's Messages(Feedbacks),Complaints and review
 ## Database Tables
 List the database tables that are part of your project.
 
-Table 1 (Created By): Table Name
-Table 2 (Created By): Table Name
-Table 3 (Created By): Table Name
+Table 1 (Yashodha Amarasinghe): food_categores
+Table 2 (Yashodha Amarasinghe): food_items
+Table 3 (Yashodha Amarasinghe): oderDetails
+Table 4 (member): table name
+Table 5 (member): table name
+Table 6 (member): table name
 Include the ER Diagram of the database.
 
 ## Created Forms
