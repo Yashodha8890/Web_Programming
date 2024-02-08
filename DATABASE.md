@@ -1,5 +1,7 @@
 ======== Database tables ===========
 
+1. Yashodha Amarasinghe
+
 -- Table structure for table `food_categores`
 
 CREATE TABLE `food_categores` 
@@ -32,6 +34,11 @@ CREATE TABLE `oderDetails` (
   `orderStatus` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+2. Mayuri Yashodha
+
+
+3. Udashi Jayaneththi
+
 -- Table structure for table `event_booking`
 
 CREATE TABLE `event_booking` (
@@ -49,8 +56,6 @@ CREATE TABLE `event_booking` (
   `event_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
-
 -- Table structure for table `delivery`
 
 CREATE TABLE `delivery` (
@@ -65,3 +70,4 @@ CREATE TABLE `delivery` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
+4. Kapila Bandara
