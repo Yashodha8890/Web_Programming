@@ -83,6 +83,7 @@ CREATE TABLE `table_reservation` (
 
 CREATE TABLE `event_booking` (
   `event_id` int NOT NULL,
+  `member_id` int NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `phone_number` varchar(50) NOT NULL,
@@ -95,6 +96,7 @@ CREATE TABLE `event_booking` (
   `menu_style` varchar(50) NOT NULL,
   `event_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 ALTER TABLE `event_booking`
   ADD PRIMARY KEY (`event_id`);
