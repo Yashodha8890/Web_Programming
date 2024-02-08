@@ -14,7 +14,7 @@ In this section, list and describe the features or functionality that you are wo
  Feature 1 (Yashodha Amarasinghe): Handling Online Order function including the shopping cart.<br>
  Feature 2 (Mayuri Yashodha): Handling member resistration & login with different user levels.<br>
  Feature 3 (Udashi Jayaneththi): Handling services and booking events.<br>
- Feature 4 (Kapila Bandara): Handling customer feedbacks and reviews.<br>
+ Feature 4 (Kapila Bandara): Handling customer feedbacks and ratings.<br>
  Feature 5 (Mayuri Yashodha): Handling Table reservation.<br>
  Feature 6 (Yashodha Amarasinghe):Managing food item details as the admin user.<br>
  Feature 7 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
@@ -37,7 +37,7 @@ With the feature of services and event booking, website users can book their pri
 
 ### Feature 4
 Handling customer feedbacks and ratings : <br>
-In this feature, Collecting customer's Messages(Feedbacks),Complaints and reviews. If the user is not a registered member refer to the register form.<br>
+In this feature, Collecting customer's Messages(Feedbacks),Complaints and reviews. If the user is not a registered member refer to the register form.The admin can view,update and delete customers feedback.<br>
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
 ## Database Tables
