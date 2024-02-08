@@ -121,10 +121,24 @@ ALTER TABLE `delivery`
 
 4. Kapila Bandara
 
-CREATE TABLE `Customer Feedback & Review` (
-  `customerid` int NOT NULL,
-  `Name` varchar(100) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Subject` varchar(200) NOT NULL,
-  `Message` text NOT NULL
+-- Table structure for table `customer_feedback_&_review`
+
+CREATE TABLE `customer_feedback_&_review` (
+  `member_id` int NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `subject` varchar(200) NOT NULL,
+  `message` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+Table structure for table `restaurant_rating`
+--
+
+CREATE TABLE `restaurant_rating` (
+  `rating_id` int NOT NULL,
+  `member_id` int NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `rating_type` varchar(50) NOT NULL,
+  `rating` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
