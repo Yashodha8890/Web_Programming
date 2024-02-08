@@ -121,19 +121,24 @@ ALTER TABLE `delivery`
 
 4. Kapila Bandara
 
--- Table structure for table `customer_feedback_&_review`
+-- Table structure for table `customer_feedback`
 
-CREATE TABLE `customer_feedback_&_review` (
+CREATE TABLE `customer_feedback` (
+  `feedback_id` int NOT NULL,
   `member_id` int NOT NULL,
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `subject` varchar(200) NOT NULL,
+  `message_type` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `message` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+ALTER TABLE `customer_feedback`
+  ADD PRIMARY KEY (`feedback_id`),
+  ADD KEY `feedback_member` (`member_id`);
 
-Table structure for table `restaurant_rating`
---
+
+-- Table structure for table `restaurant_rating`
 
 CREATE TABLE `restaurant_rating` (
   `rating_id` int NOT NULL,
@@ -142,3 +147,8 @@ CREATE TABLE `restaurant_rating` (
   `rating_type` varchar(50) NOT NULL,
   `rating` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+ALTER TABLE `restaurant_rating`
+  ADD PRIMARY KEY (`rating_id`),
+  ADD KEY `rating_member` (`member_id`);
