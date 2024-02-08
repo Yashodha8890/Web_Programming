@@ -29,9 +29,10 @@ ALTER TABLE `food_items`
 
 -- Table structure for table `oderDetails`
 
-CREATE TABLE `orderDetails` (
+CREATE TABLE `order_details` (
   `orderNo` int NOT NULL,
   `itemName` varchar(100) NOT NULL,
+  `itemId` int NOT NULL,
   `quantity` int NOT NULL,
   `unitPrice` int NOT NULL,
   `totalUnitPrice` int NOT NULL,
