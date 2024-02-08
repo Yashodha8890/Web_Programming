@@ -12,7 +12,6 @@ CREATE TABLE `food_categories` (
 ALTER TABLE `food_categories`
   ADD PRIMARY KEY (`categoryId`);
 
-
 -- Table structure for table `food_items`
 
 CREATE TABLE `food_items` (
@@ -47,7 +46,6 @@ ALTER TABLE `orderDetails`
 
 -- Table structure for table `user_ registration`
 
-
 CREATE TABLE `user_ registration` (
   `member_id` int NOT NULL,
   `first_name` varchar(50) NOT NULL,
@@ -61,7 +59,6 @@ CREATE TABLE `user_ registration` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Table structure for table `table_reservation`
-
 
 CREATE TABLE `table_reservation` (
   `reservation_id` int NOT NULL,
@@ -97,7 +94,6 @@ CREATE TABLE `event_booking` (
   `menu_style` varchar(50) NOT NULL,
   `event_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 
 ALTER TABLE `event_booking`
   ADD PRIMARY KEY (`event_id`);
@@ -137,7 +133,6 @@ ALTER TABLE `customer_feedback`
   ADD PRIMARY KEY (`feedback_id`),
   ADD KEY `feedback_member` (`member_id`);
 
-
 -- Table structure for table `restaurant_rating`
 
 CREATE TABLE `restaurant_rating` (
@@ -147,7 +142,6 @@ CREATE TABLE `restaurant_rating` (
   `rating_type` varchar(50) NOT NULL,
   `rating` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 
 ALTER TABLE `restaurant_rating`
   ADD PRIMARY KEY (`rating_id`),
