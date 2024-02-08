@@ -96,6 +96,9 @@ CREATE TABLE `event_booking` (
   `event_status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+ALTER TABLE `event_booking`
+  ADD PRIMARY KEY (`event_id`);
+
 -- Table structure for table `delivery`
 
 CREATE TABLE `delivery` (
@@ -108,6 +111,9 @@ CREATE TABLE `delivery` (
   `payment_method` varchar(50) NOT NULL,
   `oder_status` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+ALTER TABLE `delivery`
+  ADD PRIMARY KEY (`delivery_id`);
 
 
 4. Kapila Bandara
