@@ -119,3 +119,11 @@ ALTER TABLE `delivery`
 
 
 4. Kapila Bandara
+
+CREATE TABLE `Customer Feedback & Review` (
+  `customerid` int NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Subject` varchar(200) NOT NULL,
+  `Message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
