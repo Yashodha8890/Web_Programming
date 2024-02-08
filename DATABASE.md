@@ -33,7 +33,6 @@ CREATE TABLE `oderDetails` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Table structure for table `event_booking`
---
 
 CREATE TABLE `event_booking` (
   `event_id` int NOT NULL,
@@ -53,7 +52,6 @@ CREATE TABLE `event_booking` (
 
 
 -- Table structure for table `delivery`
---
 
 CREATE TABLE `delivery` (
   `delivery_id` int NOT NULL,
