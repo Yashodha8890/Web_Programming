@@ -50,8 +50,8 @@ Table 4 (Mayuri Yashodha): Registration_form<br>
 Table 5 (Mayuri Yashodha): table_reservation<br>
 Table 6 (udashi Jayaneththi): events_booking<br>
 Table 7 (udashi Jayaneththi): delivery<br>
-Table 8 (Kapila Bandara): <br>
-Table 9 (Kapila Bandara):<br>
+Table 8 (Kapila Bandara): customer_feedback<br>
+Table 9 (Kapila Bandara): restaurant_rating<br>
 
 Table 6 (member): table name
 
