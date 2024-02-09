@@ -68,13 +68,13 @@ List any tables that you have created in the project work
 eg :<br>
 Table 1 (name): table_name | Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 
-Table 1 (Yashodha Amarasinghe): food_categores 
-Table 2 (Yashodha Amarasinghe): food_items 
-Table 3 (Yashodha Amarasinghe): oderDetails 
-Table 4 (Mayuri Yashodha): Registration_form
-Table 5 (Mayuri Yashodha): table_reservation
-Table 6 (udashi Jayaneththi): events_booking
-Table 7 (udashi Jayaneththi): delivery
-Table 8 (Kapila Bandara): customer_feedback
-Table 9 (Kapila Bandara): restaurant_rating
+Table 1 (Yashodha Amarasinghe): food_categores <br><br>
+Table 2 (Yashodha Amarasinghe): food_items <br><br>
+Table 3 (Yashodha Amarasinghe): oderDetails <br><br>
+Table 4 (Mayuri Yashodha): Registration_form<br><br>
+Table 5 (Mayuri Yashodha): table_reservation<br><br>
+Table 6 (udashi Jayaneththi): events_booking<br><br>
+Table 7 (udashi Jayaneththi): delivery<br><br>
+Table 8 (Kapila Bandara): customer_feedback<br><br>
+Table 9 (Kapila Bandara): restaurant_rating<br><br>
 
