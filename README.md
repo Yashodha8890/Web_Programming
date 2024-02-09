@@ -43,7 +43,7 @@ In this feature, Collecting customer's Messages(Feedbacks),Complaints and review
 ## Database Tables
 List the database tables that are part of your project.
 
-Table 1 (Yashodha Amarasinghe): food_categores<br>
+Table 1 (Yashodha Amarasinghe): food_categories<br>
 Table 2 (Yashodha Amarasinghe): food_items<br>
 Table 3 (Yashodha Amarasinghe): oderDetails<br>
 Table 4 (Mayuri Yashodha): Registration_form<br>
@@ -52,8 +52,6 @@ Table 6 (udashi Jayaneththi): events_booking<br>
 Table 7 (udashi Jayaneththi): delivery<br>
 Table 8 (Kapila Bandara): customer_feedback<br>
 Table 9 (Kapila Bandara): restaurant_rating<br>
-
-Table 6 (member): table name
 
 Include the ER Diagram of the database.<br><br>
 ![ERDiagram](images/ER_Diagram.PNG)  
