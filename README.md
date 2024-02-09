@@ -12,13 +12,13 @@ Created Tables
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
  Feature 1 (Yashodha Amarasinghe): Handling Online Order function including the shopping cart.<br>
- Feature 2 (Mayuri Yashodha): Handling member resistration & login with different user levels.<br>
+ Feature 2 (Mayuri Yashodha): Handling member resistration and member details Update/Delete<br>
  Feature 3 (Udashi Jayaneththi): Handling services and booking events.<br>
  Feature 4 (Kapila Bandara): Handling customer feedbacks and ratings.<br>
  Feature 5 (Mayuri Yashodha): Handling Table reservation.<br>
  Feature 6 (Yashodha Amarasinghe):Managing food item details as the admin user.<br>
  Feature 7 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
- Feature 8 (Member name): Handling member details(Update/Delete).<br>
+ Feature 8 (Member name): Handling Login function with different user levels.<br>
 
 ### Feature 1
 Handling Online Order function including the shopping cart :<br>
@@ -64,7 +64,7 @@ Form 2: (Created By): Form Name: Link to the related code file (github) | Link t
 Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 ## Created Tables
-List any tables that you have created in the project work
+List any tables that you have created in the project work<br>
 eg :<br>
 Table 1 (name): table_name | Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 
