@@ -43,19 +43,18 @@ In this feature, Collecting customer's Messages(Feedbacks),Complaints and review
 ## Database Tables
 List the database tables that are part of your project.
 
-Table 1 (Yashodha Amarasinghe): food_categores<br>
-Table 2 (Yashodha Amarasinghe): food_items<br>
-Table 3 (Yashodha Amarasinghe): oderDetails<br>
-Table 4 (Mayuri Yashodha): Registration_form<br>
-Table 5 (Mayuri Yashodha): table_reservation<br>
-Table 6 (udashi Jayaneththi): events_booking<br>
-Table 7 (udashi Jayaneththi): delivery<br>
-Table 8 (Kapila Bandara): <br>
-Table 9 (Kapila Bandara):<br>
+Table 1 (Yashodha Amarasinghe): food_categores<br><br>
+Table 2 (Yashodha Amarasinghe): food_items<br><br>
+Table 3 (Yashodha Amarasinghe): oderDetails<br><br>
+Table 4 (Mayuri Yashodha): Registration_form<br><br>
+Table 5 (Mayuri Yashodha): table_reservation<br><br>
+Table 6 (udashi Jayaneththi): events_booking<br><br>
+Table 7 (udashi Jayaneththi): delivery<br><br>
+Table 8 (Kapila Bandara): customer_feedback<br><br>
+Table 9 (Kapila Bandara): restaurant_rating<br><br>
 
-Table 6 (member): table name
-
-Include the ER Diagram of the database.
+Include the ER Diagram of the database.<br><br>
+![ERDiagram](images/ER_Diagram.PNG)  
 
 ## Created Forms
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
@@ -66,8 +65,16 @@ Form 3: (Created By): Form Name: Link to the related code file (github) | Link t
 
 ## Created Tables
 List any tables that you have created in the project work
+eg :<br>
+Table 1 (name): table_name | Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 
-Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+Table 1 (Yashodha Amarasinghe): food_categores 
+Table 2 (Yashodha Amarasinghe): food_items 
+Table 3 (Yashodha Amarasinghe): oderDetails 
+Table 4 (Mayuri Yashodha): Registration_form
+Table 5 (Mayuri Yashodha): table_reservation
+Table 6 (udashi Jayaneththi): events_booking
+Table 7 (udashi Jayaneththi): delivery
+Table 8 (Kapila Bandara): customer_feedback
+Table 9 (Kapila Bandara): restaurant_rating
 
