@@ -64,7 +64,7 @@ Form 2: (Created By): Form Name: Link to the related code file (github) | Link t
 Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 ## Created Tables
-List any tables that you have created in the project work
+List any tables that you have created in the project work<br>
 eg :<br>
 Table 1 (name): table_name | Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 
