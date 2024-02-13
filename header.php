@@ -9,10 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="shopping_cart.css"> -->
     
 </head>
 <body>
-
     <!--Nav Bar starts here-->
     <nav class="navbar navbar-expand-lg bg-black textNav sticky-top ">
         <div class="container">
@@ -39,7 +39,22 @@
               </li>
              
             </ul>
-            <a class="btn btn-primary" href="#menu">Order Online</a>
+            <a class="btn btn-primary order-online-cart" href="#menu">Order Online</a>
+
+            <a class="btn btn-primary" href="admin/admin.php">Admin view</a>
+            <!-- <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div></div> -->
+            <!-- <a style="font-size:24px" class="btn-shopping" href="index.php"><img class="shopping-img"src="images/basket.png"></i></a> -->
+            <!-- <span class="span-quantity">0</span> -->
+            </div>
+              <div class="menu--icons">
+                <div class="cart-icon">
+                <!-- <a style="font-size:24px" class="btn-shopping cart-icon fa fa-shopping-cart" href="index.php"><img class="shopping-img"src="images/basket.png"></i></a> -->
+                <!-- <i class="fa fa-shopping-cart"></i> -->
+                <span>0</span>
+              </div>
+            </div>
+            
+            
           </div>
         </div>
       </nav>
