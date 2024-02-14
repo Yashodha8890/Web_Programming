@@ -3,10 +3,14 @@ Our Project is creating a website for a conceptual restaurent called, Asian Deli
 This website is being built using couple of web development related client side and server side scripting laguages and design methodologies like, HTML,CSS,javaScript,Bootstap,php & mysql.
 
 ## Table of Contents
-Features
-Database Tables
-Created Forms
-Created Tables
+
+* [Features](##Features)
+
+* [Database Tables](##DatabaseTable)
+
+* [Created Forms](##CreatedForms)
+
+* [Created Tables](##CreatedTables)
 
 ## Features
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
