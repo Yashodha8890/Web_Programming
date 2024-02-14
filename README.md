@@ -11,18 +11,20 @@ Created Tables
 ## Features
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
- Feature 1 (Yashodha Amarasinghe): Handling Online Order function including the shopping cart.<br>
+ Feature 1 (Yashodha Amarasinghe): Managing food categories, food item details and order details with the admin panel and managing website dynamic Menu.<br>
  Feature 2 (Mayuri Yashodha): Handling member resistration and member details Update/Delete<br>
  Feature 3 (Udashi Jayaneththi): Handling services and booking events.<br>
  Feature 4 (Kapila Bandara): Handling customer feedbacks and ratings.<br>
  Feature 5 (Mayuri Yashodha): Handling Table reservation.<br>
- Feature 6 (Yashodha Amarasinghe):Managing food item details as the admin user.<br>
+ Feature 6 (Yashodha Amarasinghe):Online Order function including the shopping cart.<br>
  Feature 7 (Member name): Handling offer and services according to the user levels(member/non-member).<br>
  Feature 8 (Member name): Handling Login function with different user levels.<br>
-
+ 
 ### Feature 1
-Handling Online Order function including the shopping cart :<br>
-With the Order Online feature, Asian Delight Restaurant users can order their food through the website. If the user is not a member, then he or she will be directing to Member Registration while members can log in to the website and add their items to the shopping cart. Once they are done with their selection they can do checkout and print the order as PDF. If the user wants to remove any added item from the cart he/she can remove them before performing the checkout. <br>
+Managing food categories, food item details and order details with the admin panel and managing website dynamic Menu.<br>
+In this feature, creating the admin panel where the admin user can enter food categories and food items to the DB. And providing facility for the admin to view DB data and update, delete whenever he/she wants. As well as admin can see all the available orders in the database and he/she can do the changes or can delete relant orders.
+From the website users can view dynamic menu items where the data is retiewing from the database table which is insered by the admin.
+
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .<br>
 
 ### Feature 2
@@ -39,6 +41,16 @@ With the feature of services and event booking, website users can book their pri
 Handling customer feedbacks and ratings : <br>
 In this feature, Collecting customer's Messages(Feedbacks),Complaints and reviews. If the user is not a registered member refer to the register form.The admin can view,update and delete customers feedback.<br>
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+
+### Feature 5 <br>
+Handling Table reservation.<br>
+
+
+### Feature 6 <br>
+Handling Online Order function including the shopping cart :<br>
+With the Order Online feature, Asian Delight Restaurant users can order their food through the website. If the user is not a member, then he or she will be directing to Member Registration while members can log in to the website and add their items to the shopping cart. Once they are done with their selection they can do checkout and print the order as PDF. If the user wants to remove any added item from the cart he/she can remove them before performing the checkout. <br>
+
+
 
 ## Database Tables
 List the database tables that are part of your project.

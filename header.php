@@ -37,10 +37,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contactUs">Contact Us</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Become a Member</a>
+              </li>
              
             </ul>
             <a class="btn btn-primary order-online-cart" href="#menu">Order Online</a>
-
+            
             <a class="btn btn-primary" href="admin/admin.php">Admin view</a>
             <!-- <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div></div> -->
             <!-- <a style="font-size:24px" class="btn-shopping" href="index.php"><img class="shopping-img"src="images/basket.png"></i></a> -->
