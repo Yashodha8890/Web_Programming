@@ -504,7 +504,7 @@ include 'config/db.php';
 </div>
 
 <!-- cart sidebar section -->
-<div class="sidebar" id="sidebar">
+<!-- <div class="sidebar" id="sidebar">
 <div class="sidebar-close">
   <i class ="fa-solid fa-close"></i>
   <div class="cart-menu">
@@ -521,7 +521,7 @@ include 'config/db.php';
 </div>
 
 </div>
-
+ -->
 
       <!--Sri Lankan tab starts-->
           <div class="tab-content" id="pills-tabContent">
