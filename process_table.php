@@ -68,8 +68,8 @@ if($conn -> query($sql)==TRUE)
                     <td>{$row['check_out_time']}</td>
                     <td>{$row['preferable_view']}</td>
                     <td>{$row['special_arrangements']}</td>
-                    <td><a class='btn btn-primary btn-sm' href='manage_orders.php?reservation_id=$row[reservation_id]'>Update</a></td>
-                    <td><a class='btn btn-danger btn-sm' href='manage_orders.php?reservation_id=$row[reservation_id]'>Delete</a></td>
+                    <td><a class='btn btn-primary btn-sm' href='update_reservation.php?reservation_id=$row[reservation_id]'>Update</a></td>
+                    <td><a class='btn btn-danger btn-sm' href='update_reservation.php?reservation_id=$row[reservation_id]'>Delete</a></td>
                 </tr>";
         }
 

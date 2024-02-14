@@ -115,5 +115,6 @@
                     <div class="col-sm-4"></div>
                     <div class="col-sm-4">
                         <button class="btn btn-primary text-center" type="submit" name="reserve_submit">Reserve Table</button><br><br>
+                        <!-- <button class="btn btn-primary text-center" type="submit" name="reserve_submit">View My reservation</button><br><br> -->
                     </div>
                 <div class="col-sm-4"></div>
