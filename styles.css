@@ -363,8 +363,8 @@ img
     margin: 40px auto;
     padding-top: 60px;   
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    gap: 40px;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    gap: 30px;
    /* align-items: center;*/
     justify-content: center;    
 }
