@@ -1186,7 +1186,7 @@ include 'config/db.php';
           </a>
           <h2>Table Reservation</h2>
           <p>Lorem ipsum dolor sit tempore eius eum porro! Corrupti asperiores iste ipsam!</p>
-          <a class='btn btn-primary btn-sm' href='#'>Book Table</a>
+          <a class='btn btn-primary btn-sm' href='tablereservation.php'>Book Table</a>
       </div>
   </div>
 </div>
