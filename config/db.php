@@ -3,7 +3,7 @@
     $userName = "root";
     $password = "password";
     // $dbName = "web_programing_project_db";
-    $dbName = "project";
+    $dbName = "udashi";
 
     //create the connection with the Database
 

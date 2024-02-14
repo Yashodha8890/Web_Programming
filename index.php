@@ -1160,7 +1160,7 @@ include 'config/db.php';
           </a>
           <h2>Delivery Service</h2>
           <p> Fast, reliable delivery brings your favorites to your doorstep. Order online for a delightful dining experience. Elevate your home dining today!"</p>
-          <a class='btn btn-primary btn-sm' href='#'>Deliver Order</a>
+          <a class='btn btn-primary btn-sm' href='delivery.php'>Deliver Order</a>
       </div>
   
       <div class="card">
@@ -1169,7 +1169,7 @@ include 'config/db.php';
           </a>
           <h2>Private Events</h2>
           <p>"Host memorable private events with us! Stylish spaces, personalized service, and customizable menus. Book today for an unforgettable experience!"</p>
-          <a class='btn btn-primary btn-sm' href='#'>Book Event</a>
+          <a class='btn btn-primary btn-sm' href='event_booking.php'>Book Event</a>
       </div>
   
       <div class="card">
