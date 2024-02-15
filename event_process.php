@@ -1,6 +1,8 @@
 <?php
 include 'header.php';
 
+//connect to database server
+include 'config/db.php';
 
 if (isset($_POST['submit']))
 {
@@ -25,47 +27,36 @@ if (isset($_POST['submit']))
 
     $total_price = $event_charges + $vat_amount;
 
-
-
-    //connect to database server
-    include 'config/db.php';
-
     // write sql statment to insert data
     $sql = "INSERT INTO event_booking (member_id, first_name, last_name, phone_number, email, select_room, number_of_guest, event_date, start_time, end_time, menu_style, event_status)
         VALUES ('$member_id','$first_name', '$last_name', '$phone_number', '$email', '$select_room', '$number_of_guest', '$event_date', '$start_time', '$end_time', '$menu_style', '$event_status')";
 
-    if ($conn-> query($sql)===TRUE){
+if ($conn->query($sql) === TRUE) {
+    $event_id = $conn->insert_id; // Get the ID of the newly inserted event
 
-        echo "<div style='padding-left: 600px; padding-top: 20px; padding-bottom: 20px'>";
-        echo "<h2>Your event booking chargers </h2><br>";
-        
-        echo "Customer Name: " . $first_name . " " . $last_name . "<br>";
-        echo "Phone Number: $phone_number<br>";
-        echo "Email: $email<br>";
-        echo "Selected Room: $menu_style<br>";
-        echo "Selected Date: $event_date<br>";
-        echo "Selected Start Time: $start_time<br>";
-        echo "Selected end Time: $end_time<br>";
-        echo "Number of Guests: $number_of_guest<br>";
-        echo "Selected Menu: $menu_style<br>";
-        echo "VAT: $vat_amount<br>";
-        echo "Total Price: $total_price<br>";
-        echo '<a href="manage_event.php" class="btn btn-primary">Update Information</a>';
-        echo '<button type="submit" class="btn btn-primary" name="delete">DELETE</button>';
-        echo "</div>";
-    } 
+    echo "<div style='padding-left: 600px; padding-top: 20px; padding-bottom: 20px'>";
+    echo "<h1>Your event booking charges</h1><br>";
+    echo "Customer Name: $first_name $last_name<br>";
+    echo "Phone Number: $phone_number<br>";
+    echo "Email: $email<br>";
+    echo "Selected Room: $menu_style<br>";
+    echo "Selected Date: $event_date<br>";
+    echo "Selected Start Time: $start_time<br>";
+    echo "Selected End Time: $end_time<br>";
+    echo "Number of Guests: $number_of_guest<br>";
+    echo "Selected Menu: $menu_style<br>";
+    echo "VAT(): $vat_amount<br>";
+    echo "Total Price (): $total_price<br>";
+
+    echo "<a class='btn btn-primary btn-sm' href='manage_event.php?event_id=$event_id'>Edit Your Event</a>";
     
-    else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    
-        
-    }
+    echo "</div>";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-    
-    // close the database connection
-
-    $conn-> close();
-
+// Close the database connection
+$conn->close();
 }
 
 // Function to calculate event charges based on form data

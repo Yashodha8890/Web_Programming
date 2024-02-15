@@ -1,9 +1,12 @@
 <?php
+include 'header.php';
+  //connect to database server
+  include 'config/db.php';
 //what to do with the data
 
-if (isset($_POST['submit']))
+if (isset($_POST['submitDelivary']))
 {
-    $oder_id= $_POST['oder_id'];
+    $oder_id= $_POST['order_id'];
     $delivery_address= $_POST['delivery_address'];
     $delivery_date= $_POST['delivery_date'];
     $delivery_time= $_POST['delivery_time'];
@@ -12,14 +15,14 @@ if (isset($_POST['submit']))
     $oder_status= 0;
 
 
-    //connect to database server
-    include 'config/db.php';
+  
 
     // write sql statment to insert data
-    $sql = "INSERT INTO delivery (oder_id, delivery_address, delivery_date, delivery_time, delivery_method, payment_method, oder_status)
+    $sql = "INSERT INTO delivery(oder_id, delivery_address, delivery_date, delivery_time, delivery_method, payment_method, oder_status)
     VALUES ('$oder_id', '$delivery_address', '$delivery_date', '$delivery_time', '$delivery_method', '$payment_method', '$oder_status')";
 
-    if ($conn-> query($sql)===TRUE){
+    if ($conn-> query($sql)===TRUE)
+    {
         echo "Your data was recorded";
     }
 
@@ -29,9 +32,6 @@ if (isset($_POST['submit']))
     // close the database connection
 
     $conn-> close();
-
-
-
 }
 
 

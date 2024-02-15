@@ -1,6 +1,6 @@
 <?php
-include 'header.php';
-include 'config/db.php';
+include 'header_adminpages.php';
+include '../config/db.php';
 
 if(isset($_GET['event_id'])) {
     $event_id = $_GET['event_id'];
@@ -192,5 +192,3 @@ if (isset($_POST['delete']))
 
 $conn->close();
 ?>
-
-<?php include 'footer.php';?>

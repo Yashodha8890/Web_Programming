@@ -87,6 +87,17 @@ body
     height: 100%;
 }
 
+
+.container-delivery
+{
+    background-color: antiquewhite;
+    padding-left: none;
+    padding-right: 80px;
+    padding-top: 20px;
+    display: block;
+    height: 500px;
+}
+
 .coladmin
 {
     padding-left: 50px;
