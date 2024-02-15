@@ -1236,8 +1236,7 @@ include 'config/db.php';
                 <select class="form-control" id="message_type" name="message_type">
                     <option value="messageType">Message Type</option>
                     <option value="message">Message to Restaurant</option>
-                    <option value="food_complaint">Complaint about food</option>
-                    <option value="staff_complaint">Complaint about staff</option>
+                    <option value="complaint">Complaint about Restaurant</option>
                     <option value="feedback">Feedback Message</option>
                 </select><br>
                     </div>
@@ -1282,14 +1281,15 @@ include 'config/db.php';
                     $email = $_POST['email'];
                     $subject = $_POST['subject'];   
                     $message= $_POST['message'];
+                    $admin_message= 'Not approved';
                 
                 // Connect to the db server
                 include "config/db.php";
 
 
                 // write sql statement to insert data                
-                $sql = "INSERT INTO customer_feedback(member_id, name, email, subject, message_type, message)
-                        VALUES ('$member_id', '$message_type', '$name', '$email', '$subject',  '$message')";
+                $sql = "INSERT INTO customer_feedback(member_id, name, email, subject, message_type, message,admin_message)
+                        VALUES ('$member_id', '$name', '$email', '$subject',  '$message_type', '$message','$admin_message')";
 
                 if ($conn->query($sql)===TRUE)
                     {
