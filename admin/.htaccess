@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Private access"
+AuthUserFile /var/www/html/Web_Programming_Project/admin/.htpasswd
+Require valid-user

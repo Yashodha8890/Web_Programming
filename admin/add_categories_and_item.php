@@ -2,19 +2,65 @@
 ?>
 <div class="container container-additem">
     <div class="row">    
-        <div class="col-sm-3">
-        <h2 class="text-center">Add Categories</h2>
+        <div class="col-sm-4">
+        <h3 class="text-center">Add Categories</h3>
             <form method="post" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>>
                 <label for="formGroupExampleInput1">Item Catergory name:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput1" name="catName" placeholder="" required><br/>
+                <input type="text" class="form-control" id="formGroupExampleInput1" name="catName" placeholder="" maxlength="100" required><br/>
                 <input type="submit" class="btn btn-primary text-center" name="addCategory" value="Save Category"> <br/><br/>
             </form>
+
+            <?php 
+            if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['addCategory'])){
+            
+            //connecting to DB service
+
+            include '../config/db.php';
+                $sql = "SELECT * FROM food_categories";
+                    // Execute the SQL query and store the result
+                    $result = $conn->query($sql);
+
+                    // Check if there are any results
+                    if ($result->num_rows > 0) {
+                        echo "<table class='table table-striped table-responsive'>
+                            <thead>
+                                <tr>
+                                    <th>Category No</th>
+                                    <th>Category Name</th> 
+                                    <th>Delete</th>
+                                </tr>
+                                </thead>
+                                <tbody>";
+
+                        // Loop through the result set and display data in rows
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>
+                                    <td>{$row['categoryId']}</td>
+                                    <td>{$row['categoryName']}</td> 
+                                    <td><a class='btn btn-danger btn-sm' name='deleteCat' href=''>Delete</a></td>
+                                </tr>";
+                        }
+
+                        echo "</tbody></table>";
+                    } else {
+                        // Display a message if no results are found
+                        echo "No results";
+                    }
+                    // close the connection when done
+                    $conn->close();
+                }
+   
+  ?>
+
+<!--Add food Items form-->
         </div>
-        <div class="col-sm-9">
-            <h2 class="text-center">Add Items</h2>
+        <div class="col-sm-8">
+            <h3 class="text-center">Add Items</h3>
             <form method="post" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>>
-                <label for="formGroupExampleInput2">Item Name :</label>   
-                <input type="text" class="form-control" id="formGroupExampleInput2" name="itemName" placeholder="" required><br/>
+                <label for="itemName">Item Name :</label>   
+                <input type="text" class="form-control" id="itemName" name="additemname" minlength="2" maxlength="100" required>
+                <span id="itemNameError"></span><br>
+
                 <label for="addImage">Image :</label>   
                 <input type="file" accept="image/png, image/jpeg, image/jpg" class="box" id="addImage" name="addImage" ><br/><br/>
                 <label for="cat">Item Catergory :</label>
@@ -25,13 +71,61 @@
                             <option value="3">Malaysian</option>
                             <option value="4">Snacks</option>
             </select><br/>
-                <label for="formGroupExampleInput3">Item Description :</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput3" name="description" placeholder="" required><br/>
-                    <label for="formGroupExampleInput4">Unit Price :</label>
-                    <input type="number" class="form-control" id="formGroupExampleInput4" name="unitPrice" min="0.00" required><br/>
+                <label for="description">Item Description :</label>
+                    <!-- <input type="text" class="form-control" id="formGroupExampleInput3" name="description" max="200" required><br/> -->
+                    <textarea class="form-control" id="description" name="description" maxlength="200" rows="3" required></textarea><br/><br/> 
+                    <span id="itemDecscriptionError"></span>
+
+                    <label for="unitPrice">Unit Price :</label>
+                    <input type="number" class="form-control" id="unitPrice" name="unitPrice" min="0" required><br/>
+                    <span id="itemUnitPriceError"></span>                   
+
                     <input type="submit" class="btn btn-primary text-center" name="addItem" href="manage_food_items.php" value="Save Item"> <br/><br/> 
-                    <!-- <a class='btn btn-submit btn-sm' name="addItem" href='manage_food_items.php'>Save Item</a> -->
             </form>
+
+            <!-- to add real time js validations -->
+            <script>
+                //validate the Item Name
+                function validateItemName()
+                {
+                    const additemname = document.getElementById("additemname").value;
+                    const additemnameError = document.getElementById("additemnameError").value;
+                    
+                    if(additemname.length < 3 || additemname.length >100 )
+                    {
+                        additemnameError.innerHTML = "Item name must be more than 2 and less than 100 characters!";
+                        return false;
+                    }
+                    else
+                    {
+                        additemnameError.innerHTML = "";
+                        return true;
+                    }
+                    
+                }
+
+                 //validate the unit Price
+                function validateUnitPrice()
+                {
+                    const itemUnitPrice = document.getElementById("unitPrice").value;
+                    const itemUnitPriceError = document.getElementById("itemUnitPriceError").value;
+
+                    if(unitPrice < 0 )
+                    {
+                        itemUnitPriceError.innerHTML = "Cannot insert minus values !";
+                        return false;
+                    }
+                    else
+                    {
+                        itemUnitPriceError.innerHTML = "";
+                        return true;
+                    }
+                }
+
+                //add event listners
+                document.getElementById("itemName").addEventListener("input", validateItemName);
+
+            </script>
         </div>
 </div>
 
@@ -49,7 +143,6 @@
 
             //Write SQL statement to add data to the table
             $sql="insert into food_categories(categoryName) values('$categoryName')";
-            //$sql="insert into studentsinfo (fname, lname, city, groupid) values('$fname', '$lname', '$city', '$groupid')";
 
             if($conn -> query($sql)==TRUE)
             {
@@ -67,13 +160,15 @@
             // }        
     ?>
 
+
+<!--Add food Items php-->
 <?php
     //Processing data of the form in the same page
     //Check for a post request
     
     if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['addItem']))
         {       
-            $itemName = $_POST["itemName"];     
+            $itemName = $_POST["additemname"];     
             $itemImage = $_POST["addImage"];        
             $catergoryId = $_POST["catergoryId"];
             $itemDescription = $_POST["description"];
@@ -84,7 +179,6 @@
 
             //Write SQL statement to add data to the table
             $sql="insert into food_items(itemName,image,categoryId,itemDescription,unitPrice) values('$itemName','$itemImage','$catergoryId','$itemDescription','$unitPrice')";
-            //$sql="insert into studentsinfo (fname, lname, city, groupid) values('$fname', '$lname', '$city', '$groupid')";
 
             if($conn -> query($sql)==TRUE)
             {
