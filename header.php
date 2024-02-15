@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
     <!-- <link rel="stylesheet" href="shopping_cart.css"> -->
+    <link rel="stylesheet" href="registration_styles.css">
     
 </head>
 <body>
@@ -38,7 +39,7 @@
                 <a class="nav-link" href="#contactUs">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Become a Member</a>
+                <a class="nav-link" href="userRegistration.php">Become a Member</a>
               </li>
              
             </ul>

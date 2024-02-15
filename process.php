@@ -1,35 +1,33 @@
 <?php
+// What to do with the data
+if (isset($_POST['submit']))
+{
+    // $memberid=$_POST['memberid'];
+    $firstname =$_POST['firstname'];
+    $lastname =$_POST['lastname'];
+    $contactnumber =$_POST['contactnumber'];
+    $email =$_POST['email'];
+    $address =$_POST['address'];
+    $send_offers = 0;
+    $user_name =$_POST['user_name'];
+    $pass_word =$_POST['pass_word'];
 
-if(isset($_POST[submit])){
-   $fname = $_POST["fname"];
-   $lname = $_POST["lname"];
-   $city = $_POST["city"];
-   $groupid= $_POST["groupid"];
 
-
-// Connect to the db server
-include "db.php";
-
+// come to the database server
+include 'config/db.php';
 
 // write sql statement to insert data
-$sql = "insert into studentsinfo(first_name, last_name, city, groupid)
-        values ("$fname", "$lname", "$city", "$groupid")";
+$sql="insert into user_registration(first_name,last_name,contact_number,e_mail,address,send_offers,user_name,password)values('$firstname','$lastname','$contactnumber','$email','$address','$send_offers','$user_name','$pass_word')";
 
-if ($conn->query($sql)===TRUE) {
+if($conn -> query($sql)==TRUE)
+{
     echo "Your data was recorded";
-
 }
-else {
-    echo "Error :" .$sql . "<br>". $conn->error;
+else
+{
+    echo "Error" . $sql . "<br>" . $conn -> error;
 }
-
-//close the db connection
-$conn->close();
+//close the data base connection
+    $conn->close();
 }
-
-
-
-
-
-
 ?>

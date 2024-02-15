@@ -504,7 +504,7 @@ include 'config/db.php';
 </div>
 
 <!-- cart sidebar section -->
-<div class="sidebar" id="sidebar">
+<!-- <div class="sidebar" id="sidebar">
 <div class="sidebar-close">
   <i class ="fa-solid fa-close"></i>
   <div class="cart-menu">
@@ -521,7 +521,7 @@ include 'config/db.php';
 </div>
 
 </div>
-
+ -->
 
       <!--Sri Lankan tab starts-->
           <div class="tab-content" id="pills-tabContent">
@@ -1151,7 +1151,8 @@ include 'config/db.php';
   
           <h2>Take Away</h2>
           <p>"Take the taste of Asia wherever you go! Enjoy our fast and reliable takeaway service. Order now for a flavorful experience on the go!"</p>
-      </div>
+          
+        </div>
   
       <div class="card">
           <a href="#services" class="image-button">
@@ -1159,6 +1160,7 @@ include 'config/db.php';
           </a>
           <h2>Delivery Service</h2>
           <p> Fast, reliable delivery brings your favorites to your doorstep. Order online for a delightful dining experience. Elevate your home dining today!"</p>
+          <a class='btn btn-primary btn-sm' href='delivery.php'>Deliver Order</a>
       </div>
   
       <div class="card">
@@ -1167,6 +1169,7 @@ include 'config/db.php';
           </a>
           <h2>Private Events</h2>
           <p>"Host memorable private events with us! Stylish spaces, personalized service, and customizable menus. Book today for an unforgettable experience!"</p>
+          <a class='btn btn-primary btn-sm' href='event_booking.php'>Book Event</a>
       </div>
   
       <div class="card">
@@ -1179,10 +1182,11 @@ include 'config/db.php';
 
       <div class="card">
           <a href="#services" class="image-button">
-          <img class="img-fluid" img src="images/services/offers.jpg">
+          <img class="img-fluid" img src="images/services/reserve_table.jpg">
           </a>
           <h2>Table Reservation</h2>
           <p>Lorem ipsum dolor sit tempore eius eum porro! Corrupti asperiores iste ipsam!</p>
+          <a class='btn btn-primary btn-sm' href='tablereservation.php'>Book Table</a>
       </div>
   </div>
 </div>
@@ -1223,6 +1227,17 @@ include 'config/db.php';
       <div class="col-md-6">
           <div class="wow fadeInUp" data-wow-delay="0.2s">
               <form>
+                <div class="row">
+                    <div class="col-sm-12">                    
+                <select class="form-control" id="message" name="message">
+                    <option value="messageType">Message Type</option>
+                    <option value="message">Message to Restaurant</option>
+                    <option value="food_complaint">Complaint about food</option>
+                    <option value="staff_complaint">Complaint about staff</option>
+                    <option value="feedback">Feedback Message</option>
+                </select><br>
+                    </div>
+                </div>
                   <div class="row g-3">
                       <div class="col-md-6">
                           <div class="form-floating">
