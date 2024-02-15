@@ -1,7 +1,5 @@
 <?php
 include 'header.php';
-
-//connect to database server
 include 'config/db.php';
 
 if (isset($_POST['submit']))
@@ -61,12 +59,11 @@ $conn->close();
 
 // Function to calculate event charges based on form data
 function calculateEventCharges($formData) {
-    // Implement your calculation logic here
-    // For demonstration purposes, let's assume a simple calculation based on number of guests and menu selection
+
     $number_of_guest = $formData['number_of_guest'];
     $menu_style = $formData['menu_style'];
 
-    // Define menu prices (you can retrieve these from the database)
+    // Define menu prices 
     $menu_prices = array(
         'SriLankan' => 100,  // Price for Menu 1
         'Indian' => 150,  // Price for Menu 2

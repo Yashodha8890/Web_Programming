@@ -14,7 +14,7 @@ if (isset($_GET['delivery_id'])) {
 
 ?>
 
-<!-- Your update form -->
+
 <h2 class="text-center"> Update your information below: </h2>
 <br>
 <div class="container container-delivery">
@@ -131,8 +131,7 @@ if (isset($_POST['delete']))
     if($query)
     {
       echo "Record Deleted with id: $delivery_id <br>";
-      // if you want to redirect to update page after updating
-      //header("location: update.php");
+      
     }
       else 
       { 

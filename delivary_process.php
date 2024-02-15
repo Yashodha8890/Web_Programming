@@ -1,8 +1,7 @@
 <?php
 include 'header.php';
-  //connect to database server
   include 'config/db.php';
-//what to do with the data
+
 
 if (isset($_POST['submitDelivary']))
 {

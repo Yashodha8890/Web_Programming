@@ -14,7 +14,7 @@ if(isset($_GET['event_id'])) {
 
 ?>
 
-<!-- Your update form -->
+
 <h2 class="text-center"> Update your information below: </h2>
 <br>
 <div class="container container-eventBooking">
@@ -72,11 +72,10 @@ if(isset($_GET['event_id'])) {
                 </div>
                 <div class="col-sm-4">
                     <select class="form-control" id="select_room" name="select_room">
-                        <option value="BBCAP19" <?php if($row['select_room'] == 'BBCAP19') echo 'selected'; ?>>BBCAP19</option>
-                        <option value="BBCAP20" <?php if($row['select_room'] == 'BBCAP20') echo 'selected'; ?>>BBCAP20</option>
-                        <option value="BBCAP21" <?php if($row['select_room'] == 'BBCAP21') echo 'selected'; ?>>BBCAP21</option>
-                        <option value="BBCAP22" <?php if($row['select_room'] == 'BBCAP22') echo 'selected'; ?>>BBCAP22</option>
-                        <option value="Others" <?php if($row['select_room'] == 'Others') echo 'selected'; ?>>Others</option>
+                        <option value="BBCAP19" <?php if($row['select_room'] == 'BBCAP19') echo 'selected'; ?>>Small</option>
+                        <option value="BBCAP20" <?php if($row['select_room'] == 'BBCAP20') echo 'selected'; ?>>Large</option>
+                        <option value="BBCAP21" <?php if($row['select_room'] == 'BBCAP21') echo 'selected'; ?>>Other</option>
+                        
                     </select>
                 </div>
                 <div class="col-sm-1">
@@ -180,8 +179,7 @@ if (isset($_POST['delete']))
     if($query)
     {
       echo "Record Deleted with id: $event_id <br>";
-      // if you want to redirect to update page after updating
-      //header("location: update.php");
+      
     }
       else 
       { 
