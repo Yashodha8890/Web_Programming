@@ -62,11 +62,10 @@ include "header.php"
                 </div>
                 <div class="col-sm-8">
                     <select class="form-control" id="select_room" name="select_room">
-                        <option value="BBCAP19">BBCAP19</option>
-                        <option value="BBCAP20">BBCAP20</option>
-                        <option value="BBCAP21">BBCAP21</option>
-                        <option value="BBCAP22">BBCAP22</option>
-                        <option value="Others">Others</option>
+                        <option value="BBCAP19">Small</option>
+                        <option value="BBCAP20">Large</option>
+                        <option value="BBCAP21">Other</option>
+                        
                     </select>
                 </div>
             </div>
