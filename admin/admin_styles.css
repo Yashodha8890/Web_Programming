@@ -80,7 +80,7 @@ body
 .container-additem
 {
     background-color: antiquewhite;
-    padding-left: none;
+    /* padding-left: none; */
     padding-right: 80px;
     padding-top: 20px;
     display: block;
@@ -139,14 +139,4 @@ body
 .btn-seperate
 {
     margin: 10px 10px;
-}
-
-.container-eventBooking 
-{
-    background-color: antiquewhite;
-    padding-left: none;
-    padding-right: 80px;
-    padding-top: 20px;
-    display: block;
-    height: 500px;
 }
