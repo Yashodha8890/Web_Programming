@@ -922,7 +922,7 @@
               </div>
           </div>
       </div>
-      <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+      <div class="col-md-3 wow fadeIn" data-wow-delay="0.1s">
           <iframe class="position-relative rounded w-100 h-100"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.9596117730448!2d23.758642539183022!3d61.4976720738698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468ed8ac1964e66f%3A0x5eb6a84d00894df6!2sKeskustori%2C%20Tampere!5e0!3m2!1sen!2sfi!4v1706053213293!5m2!1sen!2sfi"
               frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
@@ -930,14 +930,17 @@
       </div>
       <div class="col-md-6">
           <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <form>
+            <h3>Customer Feedback</h3>
+              <form name="feedback_form" method="post" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>>
                 <div class="row">
-                    <div class="col-sm-12">                    
-                <select class="form-control" id="message" name="message">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="member_id" placeholder="Enter your member id" name="member_id" required>
+                </div>  
+                    <div class="col-sm-6">                    
+                <select class="form-control" id="message_type" name="message_type">
                     <option value="messageType">Message Type</option>
                     <option value="message">Message to Restaurant</option>
-                    <option value="food_complaint">Complaint about food</option>
-                    <option value="staff_complaint">Complaint about staff</option>
+                    <option value="complaint">Complaint about Restaurant</option>
                     <option value="feedback">Feedback Message</option>
                 </select><br>
                     </div>
@@ -945,34 +948,144 @@
                   <div class="row g-3">
                       <div class="col-md-6">
                           <div class="form-floating">
-                              <input type="text" class="form-control" id="name" placeholder="Your Name">
+                              <input type="text" class="form-control" id="name" name="cus_name" placeholder="Your Name" required>
                               <label for="name">Your Name</label>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-floating">
-                              <input type="email" class="form-control" id="email" placeholder="Your Email">
+                              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                               <label for="email">Your Email</label>
                           </div>
                       </div>
                       <div class="col-12">
                           <div class="form-floating">
-                              <input type="text" class="form-control" id="subject" placeholder="Subject">
+                              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                               <label for="subject">Subject</label>
                           </div>
                       </div>
                       <div class="col-12">
                           <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                              <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
                               <label for="message">Message</label>
                           </div>
                       </div>
                       <div class="col-12">
-                          <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                          <button class="btn btn-primary w-100 py-3" type="submit" href="#contactUs" name="submit_feedback">Send Message</button>
                       </div>
                   </div>
-              </form>
+              </form><br><br>
+              <div class="row g-3">
+              <?php
+                if(isset($_POST["submit_feedback"]))
+                {                
+                    $member_id = $_POST['member_id'];
+                    $message_type = $_POST['message_type'];
+                    $name = $_POST['cus_name'];
+                    $email = $_POST['email'];
+                    $subject = $_POST['subject'];   
+                    $message= $_POST['message'];
+                    $admin_message= 'Not approved';
+                
+                // Connect to the db server
+                include "config/db.php";
+
+
+                // write sql statement to insert data                
+                $sql = "INSERT INTO customer_feedback(member_id, name, email, subject, message_type, message,admin_message)
+                        VALUES ('$member_id', '$name', '$email', '$subject',  '$message_type', '$message','$admin_message')";
+
+                if ($conn->query($sql)===TRUE)
+                    {
+
+                        echo "<h4>Thank you for contacting us. We will get back you as soon as possible.<h4>";
+
+                    }
+                else {
+                    echo "Error :" .$sql . "<br>". $conn->error;
+                }
+
+                //close the db connection
+                $conn->close();
+                }
+
+                ?>
+                </div>
           </div>
+      </div>
+      <!-- cutomer rating-->
+      <div class="col-md-3">
+      <h3>Customer Rating</h3>
+      <form name="rating_form" method="post" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>>
+                <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="member_id" placeholder="Enter your member id" name="member_id" required> <br>
+                </div> 
+                   
+                </div>
+                  <div class="row g-3">
+                      <div class="col-md-12">
+                          <div class="form-floating">
+                              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                              <label for="name">Your Name</label>
+                          </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-sm-6">                    
+                            <select type="text" class="form-control" id="rating_type" name="rating_type"required>
+                                <option value="positive">Enter Your Rating</option>
+                                <option value="positive">Positive</option>
+                                <option value="negative">Negative</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+
+                          <input type="number" class="form-control" id="subject" placeholder="Enter the rating" name="rating" required>
+                             
+                        </div>
+                    </div>
+                      
+                      
+                      <div class="col-12">
+                          <button class="btn btn-primary w-100 py-3" type="submit" href="#contactUs" name="submit_rating">Send Message</button>
+                      </div>
+                  </div>
+              </form><br><br>
+
+              <?php
+//insert values to cutomer rating table
+    if(isset($_POST["submit_rating"]))
+    {
+        $member_id = $_POST["member_id"];
+        $name = $_POST["name"];
+        $rating = $_POST["rating"];
+        $rating_type = $_POST["rating_type"]; 
+
+        // Connect to the db server
+        include "config/db.php";
+
+        // write sql statement to insert data
+
+        $sql = "INSERT INTO restaurant_rating(member_id, name, rating_type, rating)
+                VALUES ('$member_id', '$name','$rating_type', '$rating')";
+
+        if ($conn->query($sql)===TRUE) 
+        {
+            echo "Thank you very much for your valuable rating..!!";
+        }
+
+        else 
+        {
+            echo "Error :" .$sql . "<br>". $conn->error;
+        }
+
+        //close the db connection
+            $conn->close();
+    }
+
+?>        
       </div>
   </div>
 </div>
