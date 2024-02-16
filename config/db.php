@@ -2,9 +2,6 @@
     $serverName = "php24-db-1";
     $userName = "root";
     $password = "password";
-     $dbName = "web_programing_project_db";
-    //$dbName = "udashi";
-    // $dbName = "project";
 
 
     //create the connection with the Database

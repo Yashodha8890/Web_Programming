@@ -31,7 +31,7 @@
             <a class="nav-link" href="manage_food_items.php">Manage Food Items</a>
             <a class="nav-link" href="food_orders.php">Food Orders</a>
             <a class="nav-link" href="admin_events.php">Events</a>
-            <a class="nav-link" href="#">Delivaries</a>
+            <a class="nav-link" href="admin_delivery.php">Delivaries</a>
             <a class="nav-link" href="#">Complains</a>
             <a class="nav-link" href="feedback.php">Feedback</a>
             <a class="nav-link" href="read_ratings.php">Ratings</a>
