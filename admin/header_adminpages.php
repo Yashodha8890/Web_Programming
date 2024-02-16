@@ -33,8 +33,8 @@
             <a class="nav-link" href="admin_events.php">Events</a>
             <a class="nav-link" href="#">Delivaries</a>
             <a class="nav-link" href="#">Complains</a>
-            <a class="nav-link" href="#">Feedback</a>
-            <a class="nav-link" href="#">Ratings</a>
+            <a class="nav-link" href="feedback.php">Feedback</a>
+            <a class="nav-link" href="read_ratings.php">Ratings</a>
             <a class="nav-link" href="#">Member Profiles</a>
           </nav>
         </div>

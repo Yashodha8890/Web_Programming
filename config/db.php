@@ -1,5 +1,5 @@
 <?php
-    $serverName = "web-dev-env-main-db-1";
+    $serverName = "php24-db-1";
     $userName = "root";
     $password = "password";
      $dbName = "web_programing_project_db";
