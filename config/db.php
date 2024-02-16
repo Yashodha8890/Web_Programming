@@ -6,6 +6,7 @@
     //$dbName = "udashi";
     // $dbName = "project";
 
+
     //create the connection with the Database
 
     $conn = new mysqli($serverName,$userName,$password,$dbName);
