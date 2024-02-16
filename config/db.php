@@ -2,13 +2,10 @@
     $serverName = "web-dev-env-main-db-1";
     $userName = "root";
     $password = "password";
-    // $dbName = "web_programing_project_db";
-<<<<<<< Updated upstream
-    $dbName = "project";
-=======
+     $dbName = "web_programing_project_db";
     //$dbName = "udashi";
-     $dbName = "project";
->>>>>>> Stashed changes
+    // $dbName = "project";
+
 
     //create the connection with the Database
 

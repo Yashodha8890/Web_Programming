@@ -160,307 +160,11 @@
       <!--Nav and tab end-->
 
       <!--All menu tab starts-->
-      <!--comment starts here-->
-<!--            <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-              <div class="row gy-4">
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/rice_and_curry.jpeg" alt="Rice and curry">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                      
-                                  </span>  
-                                  <span class="align-items-center">€ 7,0</span>
-                              </div>
-
-                              <h5 class="my-2"><a href="#">Sri Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                              <span>
-                                  <div class="input-group number-spinner">
-                                      <button id="item-minus" class="btn btn-primary"><i class="fas fa-minus"></i></button>
-                                      <input id="phone-number" type="number" min="0" class="form-control text-center" value="1">
-                                      <button id="item-plus" class="btn btn-primary"><i class="fas fa-plus"></i></button>
-                                      <img src="images/remove.png" alt="" class="remove-item">
-
-                                  </div>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/indiappa.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#">Indi Appa(String hoppers) & curry</a></h5>
-                              <p class="small">String hoppers and curries(Dhall/Chicken/Pol Sambal/Egg)</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/kiribath.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#">Kiri bath & Lunu Miris</a></h5>
-                              <p class="small">Kiri bath(Milk Rice) and Onion sambal</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/fried_rice.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.0)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Sri Lankan Fride rice</a></h5>
-                              <p class="small">Vegetable/Chicken/Egg Fried rice & Chilli paste</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/yellow_rice.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#">Sri Lankan Yellow Rice</a></h5>
-                              <p class="small">Yellow Rice, Batu moju(Brinjol pickle), Meat(Chicken/Pork/Beef)/Egg, Salad, Potato curry</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/pol_roti.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Sri Lankan Pol roti & Lunu miris</a></h5>
-                              <p class="small">Pol roti and lunu miris(onion sambal)</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/kottu.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/mutton_bririyani.jpg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/chapathi.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/chapathi_rice_meal.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/nasi_lemak.jpeg" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-sm-6">
-                      <div class="menu-item bg-white shadow-on-hover">
-                          <a href="#menu" class="image-button">
-                          <img class="menu-all-image" src="images/menu/all/roti_chanai.webp" alt="">
-                          </a>
-                          <div class="menu-item-content p-4">
-                              <div>
-                                  <span>Rated(4.5)</span>
-                                  <span class="stars">
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-fill"></i>
-                                      <i class="ri-star-half-fill"></i>
-                                  </span>  
-                              </div>
-                              <h5 class="my-2"><a href="#"> Lankan Rice & Curry</a></h5>
-                              <p class="small">Rice, 3 Vegetables, Meat(Chicken/Pork/Beef)/Egg/Vegan</p>
-                          </div>
-                      </div>
-                  </div>
-
-<div class="cartTab">
-  <h1>Shopping Cart</h1>
-  <div class="listCart">
-      
-  </div>
-  <div class="btn">
-      <button class="close">CLOSE</button>
-      <button class="checkOut">Check Out</button>
-  </div>
-</div>
-              </div>
-          </div>  
-
-      </div>-->
-      <!--comments ends here-->
-      <!--All menu tab ends-->
 
 
 <?php
-//import db.php
-include 'config/db.php';
+
+    include 'config/db.php';
 ?>
 
 <div class="tab-content" id="pills-tabContent">
@@ -1151,7 +855,8 @@ include 'config/db.php';
   
           <h2>Take Away</h2>
           <p>"Take the taste of Asia wherever you go! Enjoy our fast and reliable takeaway service. Order now for a flavorful experience on the go!"</p>
-      </div>
+          
+        </div>
   
       <div class="card">
           <a href="#services" class="image-button">
@@ -1159,6 +864,7 @@ include 'config/db.php';
           </a>
           <h2>Delivery Service</h2>
           <p> Fast, reliable delivery brings your favorites to your doorstep. Order online for a delightful dining experience. Elevate your home dining today!"</p>
+          <a class='btn btn-primary btn-sm' href='delivery.php'>Deliver Order</a>
       </div>
   
       <div class="card">
@@ -1167,6 +873,7 @@ include 'config/db.php';
           </a>
           <h2>Private Events</h2>
           <p>"Host memorable private events with us! Stylish spaces, personalized service, and customizable menus. Book today for an unforgettable experience!"</p>
+          <a class='btn btn-primary btn-sm' href='event_booking.php'>Book Event</a>
       </div>
   
       <div class="card">
@@ -1179,10 +886,11 @@ include 'config/db.php';
 
       <div class="card">
           <a href="#services" class="image-button">
-          <img class="img-fluid" img src="images/services/offers.jpg">
+          <img class="img-fluid" img src="images/services/reserve_table.jpg">
           </a>
           <h2>Table Reservation</h2>
-          <p>Lorem ipsum dolor sit tempore eius eum porro! Corrupti asperiores iste ipsam!</p>
+          <p>Step into taste of asia ! Reserve your spot, before its too late to grab a delightful experience with personalized service. Book today for an unforgettable experience!</p>
+          <a class='btn btn-primary btn-sm' href='tablereservation.php'>Book Table</a>
       </div>
   </div>
 </div>
@@ -1223,6 +931,17 @@ include 'config/db.php';
       <div class="col-md-6">
           <div class="wow fadeInUp" data-wow-delay="0.2s">
               <form>
+                <div class="row">
+                    <div class="col-sm-12">                    
+                <select class="form-control" id="message" name="message">
+                    <option value="messageType">Message Type</option>
+                    <option value="message">Message to Restaurant</option>
+                    <option value="food_complaint">Complaint about food</option>
+                    <option value="staff_complaint">Complaint about staff</option>
+                    <option value="feedback">Feedback Message</option>
+                </select><br>
+                    </div>
+                </div>
                   <div class="row g-3">
                       <div class="col-md-6">
                           <div class="form-floating">

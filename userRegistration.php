@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Registration Form</title>
-        <!-- <link rel="stylesheet" href="bootstrap.css"> -->
-        <link rel="stylesheet" href="registration_styles.css">
-        
-    </head>
-    <body>
+<?php include 'headers/registration_header.php'; ?>
 
-    <?php include 'registration_header.php'; ?>
         <div class="registration-form">
             <h3 class="text-center">Registration Form</h3>
             <div class="container container-registration">

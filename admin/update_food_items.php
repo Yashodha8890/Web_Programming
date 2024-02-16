@@ -26,12 +26,14 @@
     <div class="row">
       <div class="col-md-6">
         <label for="itemName"><b>Item Name :</b></label>
-        <input type="text" class="form-control" placeholder="" id="itemName" name="itemName" required value="<?php echo $row['itemName']; ?>">
+        <input type="text" class="form-control" placeholder="" id="itemName" name="itemName" required maxlength="100" value="<?php echo $row['itemName']; ?>">
       </div>
 
       <div class="col-md-6">
         <label for="itemDescription"><b>Item Description :</b></label>
-        <input type="text" class="form-control" placeholder="" id="itemDescription" name="itemDescription" required value="<?php echo $row['itemDescription']; ?>">    
+       <input type="text" class="form-control" placeholder="" id="itemDescription" name="itemDescription" required maxlength="200" value="<?php echo $row['itemDescription']; ?>">
+        <!-- <textarea class="form-control" id="itemDescription" name="itemDescription" maxlength="200" rows="3" required value="<?php echo $row['itemDescription']; ?>"> -->
+      </textarea>    
       </div>
     </div>
       <br>
@@ -89,7 +91,7 @@ if (isset($_POST['submit']))
     $query = mysqli_query($conn,"UPDATE food_items set itemName='$itemName', itemDescription='$itemDescription', unitPrice='$unitPrice' where itemId='$a'");
     if($query)
     {
-        echo "<h2>Your information is updated Successfully</h2>";
+        echo "<h6>Your information is updated Successfully</h6>";
         // if you want to redirect to update page after updating
     }
     else { echo "Record Not modified";}
