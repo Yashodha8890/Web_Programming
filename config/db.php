@@ -3,7 +3,12 @@
     $userName = "root";
     $password = "password";
     // $dbName = "web_programing_project_db";
+<<<<<<< Updated upstream
     $dbName = "project";
+=======
+    //$dbName = "udashi";
+     $dbName = "project";
+>>>>>>> Stashed changes
 
     //create the connection with the Database
 
