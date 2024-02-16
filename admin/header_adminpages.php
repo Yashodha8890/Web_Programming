@@ -18,14 +18,13 @@
           <a href="#"><img src="../images/hero_section/logo_final.png" alt="asian delight"></a>
             <h1 class="text-center adminheader-h1">Admin Panel</h1>
              
-            <!-- <a class="btn btn-primary" href="index.php">Back to web</a> -->
             <a class="btn btn-primary" style="font-size:25px"href="../index.php">Back to web</a>
           </div>
         </div>
       </nav>
       <div class="row">
         <div class="col-sm-3 coladmin bg-black">
-          <h3>Admin Tasks</h3>
+          <h3 class="admin-side-bar">Admin Tasks</h3>
           <nav class="nav flex-column bg-black">
             <a class="nav-link active" aria-current="page" href="admin.php">Admin Home</a>
             <a class="nav-link" href="add_categories_and_item.php">Add Food Categories and items</a>

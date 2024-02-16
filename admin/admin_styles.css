@@ -80,7 +80,7 @@ body
 .container-additem
 {
     background-color: antiquewhite;
-    padding-left: none;
+    /* padding-left: none; */
     padding-right: 80px;
     padding-top: 20px;
     display: block;
@@ -130,3 +130,8 @@ body
     margin: 10px 10px;
 }
 
+.admin-side-bar
+{
+    font-size: 26px;
+    color: white;
+}

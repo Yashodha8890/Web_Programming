@@ -2,9 +2,9 @@
     $serverName = "web-dev-env-main-db-1";
     $userName = "root";
     $password = "password";
-    // $dbName = "web_programing_project_db";
+     $dbName = "web_programing_project_db";
     //$dbName = "udashi";
-     $dbName = "project";
+    // $dbName = "project";
 
     //create the connection with the Database
 
