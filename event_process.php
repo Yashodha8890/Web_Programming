@@ -31,7 +31,7 @@ if (isset($_POST['submit']))
 
 if ($conn->query($sql) === TRUE) {
     $event_id = $conn->insert_id; // Get the ID of the newly inserted event
-
+    
     echo "<div style='padding-left: 600px; padding-top: 20px; padding-bottom: 20px'>";
     echo "<h1>Your event booking charges</h1><br>";
     echo "Customer Name: $first_name $last_name<br>";

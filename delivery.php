@@ -4,7 +4,7 @@ include "header.php"
 
 
 <h2 class="text-center">Input Your Information Below:</h2>
-<div class="container container-delivery">
+<div class="container container-delivery container-additem">
 <form name="form1" method="post" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>>
     <div class="form-group">
         <div class="row">

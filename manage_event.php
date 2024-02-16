@@ -181,7 +181,7 @@ if (isset($_POST['delete']))
     {
       echo "Record Deleted with id: $event_id <br>";
       // if you want to redirect to update page after updating
-      //header("location: update.php");
+
     }
       else 
       { 
