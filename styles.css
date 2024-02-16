@@ -493,4 +493,16 @@ footer
     font-size: 40px;
 }
 
+
+
+.container-delivery
+{
+    background-color: antiquewhite;
+    padding-left: none;
+    padding-right: 80px;
+    padding-top: 20px;
+    display: block;
+    height: 500px;
+}
+
 /* ------- stylesheet ends here ---- */
