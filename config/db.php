@@ -1,14 +1,8 @@
 <?php
-    $serverName = "php24-db-1";
+    $serverName = "web-dev-env-main-db-1";
     $userName = "root";
     $password = "password";
-<<<<<<< Updated upstream
-=======
-     $dbName = "web_programm_project_db";
-    //$dbName = "udashi";
-    // $dbName = "project";
->>>>>>> Stashed changes
-
+    //$dbName = "web_programing_project_db";
 
     //create the connection with the Database
 
