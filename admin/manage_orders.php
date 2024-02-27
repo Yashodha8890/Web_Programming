@@ -27,24 +27,29 @@
       <div class="col-md-6">
         <label for="orderQty"><b>Quantity :</b></label>
         <input type="text" class="form-control" placeholder="" id="orderQty" name="orderQty" required value="<?php echo $row['quantity']; ?>">
+        <span id="orderQtyError" style="color:red;"></span> <br>                  
+
       </div>
 
       <div class="col-md-6">
-        <label for="unitPrice"><b>Unit Price(€) :</b></label>
-        <input type="text" class="form-control" placeholder="" id="unitPrice" name="unitPrice" required value="<?php echo $row['unitPrice']; ?>">    
+        <label for="orderUnitPrice"><b>Unit Price(€) :</b></label>
+        <input type="text" class="form-control" placeholder="" id="orderUnitPrice" name="unitPrice" required value="<?php echo $row['unitPrice']; ?>">  
+        <span id="orderUnitPriceError" style="color:red;"></span> <br>   
       </div>
     </div>
       <br>
         
     <div class="row">
       <div class="col-md-4">
-        <label for="totalPrice"><b>Total Price(€) :</b></label>
-        <input type="text" class="form-control" placeholder="" id="totalPrice" name="totalPrice" required value="<?php echo $row['totalUnitPrice']; ?>">    
+        <label for="orderTotalPrice"><b>Total Price(€) :</b></label>
+        <input type="text" class="form-control" placeholder="" id="orderTotalPrice" name="totalPrice" required value="<?php echo $row['totalUnitPrice']; ?>">    
+        <span id="orderTotalPriceError" style="color:red;"></span> <br>  
       </div>
 
       <div class="col-md-4">
         <label for="orderStatus"><b>Order Status :</b></label>
         <input type="text" class="form-control" placeholder="" id="orderStatus" name="orderStatus" required value="<?php echo $row['orderStatus']; ?>">
+        <span id="orderStatusError" style="color:red;"></span> <br> 
       </div>
 
       <div class="col-md-4">
@@ -67,6 +72,89 @@
       </div>      
     </div>
   </form>
+
+  <script>
+      //validate the Item Name
+          function validateQuantity()
+          {
+            const orderQty = document.getElementById("orderQty").value;
+            const orderQtyError = document.getElementById("orderQtyError");
+                    
+                if(orderQty < 1 )
+                {
+                  orderQtyError.innerHTML = "Quantity cannot be 0 or empty!";
+                  return false;
+                }
+                else
+                {
+                  orderQtyError.innerHTML = "";
+                  return true;
+                }
+                    
+          }
+
+        //validate the unit Price
+        function validateOrderUnitPrice()
+        {
+          const orderUnitPrice = document.getElementById("orderUnitPrice").value;
+          const orderUnitPriceError = document.getElementById("orderUnitPriceError");
+
+          if(orderUnitPrice < 1 )
+            {
+              orderUnitPriceError.innerHTML = "Unit Price Cannot be 0 or minus values !";
+              return false;
+            }
+            else
+            {
+              orderUnitPriceError.innerHTML = "";
+              return true;
+            }
+        }
+
+        //validate the Total Price
+        function validateOrderTotalPrice()
+        {
+          const orderTotalPrice = document.getElementById("orderTotalPrice").value;
+          const orderTotalPriceError = document.getElementById("orderTotalPriceError");
+
+          if(orderTotalPrice < 1 )
+            {
+              orderTotalPriceError.innerHTML = "Total Price Cannot be 0 or minus values !";
+              return false;
+            }
+            else
+            {
+              orderTotalPriceError.innerHTML = "";
+              return true;
+            }
+        }
+
+
+        //validate the Order Status
+        function validateOrderStatus()
+        {
+          const orderStatus = document.getElementById("orderStatus").value;
+          const orderStatusError = document.getElementById("orderStatusError");
+
+          if(orderStatus === "")
+            {
+              orderStatusError.innerHTML = "Order status cannot be empty !";
+              return false;
+            }
+            else
+            {
+              orderStatusError.innerHTML = "";
+              return true;
+            }
+        }
+
+        //add event listners 
+        document.getElementById("orderQty").addEventListener("input", validateQuantity);
+        document.getElementById("orderUnitPrice").addEventListener("input", validateOrderUnitPrice);
+        document.getElementById("orderTotalPrice").addEventListener("input", validateOrderTotalPrice);
+        document.getElementById("orderStatus").addEventListener("input", validateOrderStatus);
+
+  </script>
 </div>
 
 <?php 
