@@ -4,6 +4,8 @@
     $password = "password";
     //$dbName = "web_programing_project_db";
 
+    //test
+
     //create the connection with the Database
 
     $conn = new mysqli($serverName,$userName,$password,$dbName);
