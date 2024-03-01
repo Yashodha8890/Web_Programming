@@ -25,14 +25,14 @@
     <br>
     <div class="row">
       <div class="col-md-6">
-        <label for="itemName"><b>Item Name :</b></label>
-        <input type="text" class="form-control" placeholder="" id="itemName" name="itemName" required maxlength="100" value="<?php echo $row['itemName']; ?>">
+        <label for="updateItemName"><b>Item Name :</b></label>
+        <input type="text" class="form-control" placeholder="" id="updateItemName" name="itemName" required minlength="2" maxlength="100" value="<?php echo $row['itemName']; ?>">
+        <span id="updateitemnameError" style="color:red;" ></span><br>
       </div>
 
       <div class="col-md-6">
         <label for="itemDescription"><b>Item Description :</b></label>
-       <input type="text" class="form-control" placeholder="" id="itemDescription" name="itemDescription" required maxlength="200" value="<?php echo $row['itemDescription']; ?>">
-        <!-- <textarea class="form-control" id="itemDescription" name="itemDescription" maxlength="200" rows="3" required value="<?php echo $row['itemDescription']; ?>"> -->
+       <input type="text" class="form-control" placeholder="" id="itemDescription" name="itemDescription" maxlength="200" value="<?php echo $row['itemDescription']; ?>">
       </textarea>    
       </div>
     </div>
@@ -40,8 +40,9 @@
         
     <div class="row">
       <div class="col-md-4">
-        <label for="unitPrice"><b>Unit Price (€) :</b></label>
-        <input type="text" class="form-control" placeholder="" id="unitPrice" name="unitPrice" required value="<?php echo $row['unitPrice']; ?>">    
+        <label for="updateUnitPrice"><b>Unit Price (€) :</b></label>
+        <input type="text" class="form-control" placeholder="" id="updateUnitPrice" name="unitPrice" min="0" required value="<?php echo $row['unitPrice']; ?>"><br> 
+        <span id="updateItemUnitPriceError"  style="color:red;"></span>
       </div>
 
       <div class="col-md-4">
@@ -71,6 +72,51 @@
       </div>      
     </div>
   </form>
+
+  <script>
+      //validate the Item Name
+          function validateFoodItemName()
+          {
+              const updateitemname = document.getElementById("updateItemName").value;
+              const updateitemnameError = document.getElementById("updateitemnameError");
+                    
+                if(updateitemname.length < 3 || updateitemname.length >100 )
+                {
+                  updateitemnameError.innerHTML = "Item name must be more than 2 and less than 100 characters!";
+                  return false;
+                }
+                else
+                {
+                  updateitemnameError.innerHTML = "";
+                  return true;
+                }
+                    
+                }
+
+                 //validate the unit Price
+                function validateUpdateUnitPrice()
+                {
+                    const updateItemUnitPrice = document.getElementById("updateUnitPrice").value;
+                    const updateItemUnitPriceError = document.getElementById("updateItemUnitPriceError");
+
+                    if(updateItemUnitPrice < 1 )
+                    {
+                      updateItemUnitPriceError.innerHTML = "Cannot insert minus values !";
+                      return false;
+                    }
+                    else
+                    {
+                      updateItemUnitPriceError.innerHTML = "";
+                      return true;
+                    }
+                }
+
+                //add event listners 
+                document.getElementById("updateItemName").addEventListener("input", validateFoodItemName);
+                document.getElementById("updateUnitPrice").addEventListener("input", validateUpdateUnitPrice);
+
+            </script>
+
 </div>
 
 <?php 

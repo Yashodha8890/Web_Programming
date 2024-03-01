@@ -11,7 +11,7 @@
             </form>
 
             <?php 
-            if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['addCategory'])){
+            // if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['addCategory'])){
             
             //connecting to DB service
 
@@ -48,9 +48,11 @@
                     }
                     // close the connection when done
                     $conn->close();
-                }
-   
-  ?>
+        // }
+ 
+
+
+    ?>
 
 <!--Add food Items form-->
         </div>
@@ -59,12 +61,12 @@
             <form method="post" action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>>
                 <label for="itemName">Item Name :</label>   
                 <input type="text" class="form-control" id="itemName" name="additemname" minlength="2" maxlength="100" required>
-                <span id="itemNameError"></span><br>
+                <span id="additemnameError" style="color:red;" ></span><br>
 
                 <label for="addImage">Image :</label>   
                 <input type="file" accept="image/png, image/jpeg, image/jpg" class="box" id="addImage" name="addImage" ><br/><br/>
                 <label for="cat">Item Catergory :</label>
-                <select class="form-select" aria-label="Default select example" id="cat" name="catergoryId">
+                <select class="form-select" aria-label="Default select example" id="cat" name="catergoryId" required>
                             <option selected>Select Catergory</option>
                             <option value="1">Sri Lankan</option>
                             <option value="2">Indian</option>
@@ -77,8 +79,8 @@
                     <span id="itemDecscriptionError"></span>
 
                     <label for="unitPrice">Unit Price :</label>
-                    <input type="number" class="form-control" id="unitPrice" name="unitPrice" min="0" required><br/>
-                    <span id="itemUnitPriceError"></span>                   
+                    <input type="number" class="form-control" id="unitPrice" name="unitPrice" min="0" required>
+                    <span id="itemUnitPriceError" style="color:red;"></span> <br>                  
 
                     <input type="submit" class="btn btn-primary text-center" name="addItem" href="manage_food_items.php" value="Save Item"> <br/><br/> 
             </form>
@@ -88,8 +90,8 @@
                 //validate the Item Name
                 function validateItemName()
                 {
-                    const additemname = document.getElementById("additemname").value;
-                    const additemnameError = document.getElementById("additemnameError").value;
+                    const additemname = document.getElementById("itemName").value;
+                    const additemnameError = document.getElementById("additemnameError");
                     
                     if(additemname.length < 3 || additemname.length >100 )
                     {
@@ -108,9 +110,9 @@
                 function validateUnitPrice()
                 {
                     const itemUnitPrice = document.getElementById("unitPrice").value;
-                    const itemUnitPriceError = document.getElementById("itemUnitPriceError").value;
+                    const itemUnitPriceError = document.getElementById("itemUnitPriceError");
 
-                    if(unitPrice < 0 )
+                    if(itemUnitPrice < 1 )
                     {
                         itemUnitPriceError.innerHTML = "Cannot insert minus values !";
                         return false;
@@ -122,8 +124,9 @@
                     }
                 }
 
-                //add event listners
+                //add event listners 
                 document.getElementById("itemName").addEventListener("input", validateItemName);
+                document.getElementById("unitPrice").addEventListener("input", validateUnitPrice);
 
             </script>
         </div>
