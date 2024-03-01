@@ -2,6 +2,7 @@
     $serverName = "web-dev-env-main-db-1";
     $userName = "root";
     $password = "password";
+    $dbName= "udashi";
     //$dbName = "web_programing_project_db";
 
     //test
