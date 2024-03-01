@@ -32,7 +32,8 @@ if (isset($_POST['submit']))
 if ($conn->query($sql) === TRUE) {
     $event_id = $conn->insert_id; // Get the ID of the newly inserted event
     
-    echo "<div style='padding-left: 600px; padding-top: 20px; padding-bottom: 20px'>";
+    echo "<div style='padding-left: 400px;padding-right:400px; padding-top: 20px; padding-bottom: 20px'>";
+    echo "<div class='container-booking'>";
     echo "<h1>Your event booking charges</h1><br>";
     echo "Customer Name: $first_name $last_name<br>";
     echo "Phone Number: $phone_number<br>";
@@ -43,11 +44,12 @@ if ($conn->query($sql) === TRUE) {
     echo "Selected End Time: $end_time<br>";
     echo "Number of Guests: $number_of_guest<br>";
     echo "Selected Menu: $menu_style<br>";
-    echo "VAT(): $vat_amount<br>";
-    echo "Total Price (): $total_price<br>";
+    echo "VAT(Є): $vat_amount<br>";
+    echo "Total Price (Є): $total_price<br><br>";
 
     echo "<a class='btn btn-primary btn-sm' href='manage_event.php?event_id=$event_id'>Edit Your Event</a>";
     
+    echo "</div>";
     echo "</div>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -84,6 +86,7 @@ function calculateEventCharges($formData) {
         return "Error: Invalid menu selection";
     }
 }
+
 include 'footer.php';
 
 ?>

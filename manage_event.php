@@ -33,6 +33,7 @@ if(isset($_GET['event_id'])) {
                 <input type="text" class="form-control" id="member_id" name="member_id" value="<?php echo $row['member_id']; ?>">
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -49,6 +50,7 @@ if(isset($_GET['event_id'])) {
                 </div>
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -65,6 +67,7 @@ if(isset($_GET['event_id'])) {
                 </div>
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -72,10 +75,10 @@ if(isset($_GET['event_id'])) {
                 </div>
                 <div class="col-sm-4">
                     <select class="form-control" id="select_room" name="select_room">
-                        <option value="BBCAP19" <?php if($row['select_room'] == 'BBCAP19') echo 'selected'; ?>>BBCAP19</option>
-                        <option value="BBCAP20" <?php if($row['select_room'] == 'BBCAP20') echo 'selected'; ?>>BBCAP20</option>
-                        <option value="BBCAP21" <?php if($row['select_room'] == 'BBCAP21') echo 'selected'; ?>>BBCAP21</option>
-                        <option value="BBCAP22" <?php if($row['select_room'] == 'BBCAP22') echo 'selected'; ?>>BBCAP22</option>
+                        <option value="BBCAP19" <?php if($row['select_room'] == 'BBCAP19') echo 'selected'; ?>>Select Room</option>
+                        <option value="BBCAP20" <?php if($row['select_room'] == 'BBCAP20') echo 'selected'; ?>>Small</option>
+                        <option value="BBCAP21" <?php if($row['select_room'] == 'BBCAP21') echo 'selected'; ?>>Medium</option>
+                        <option value="BBCAP22" <?php if($row['select_room'] == 'BBCAP22') echo 'selected'; ?>>Large</option>
                         <option value="Others" <?php if($row['select_room'] == 'Others') echo 'selected'; ?>>Others</option>
                     </select>
                 </div>
@@ -103,6 +106,7 @@ if(isset($_GET['event_id'])) {
                 </div>
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -124,6 +128,7 @@ if(isset($_GET['event_id'])) {
                 </div>
             </div>
         </div>
+        <br><br>
 
         <div class="row justify-content-center">
             <div class="col-sm-1 text-center">  
