@@ -130,4 +130,3 @@ include "header.php"
     }
     document.getElementById("delivery_address").addEventListener("input", validateDeliveryAddress);
 </script>
-
