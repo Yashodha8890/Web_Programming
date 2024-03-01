@@ -22,6 +22,7 @@ include "header.php"
                 </div>
                 <div class="col-sm-8">
                     <input type="text" class="form-control" id="first_name" placeholder="Enter your first name" name="first_name" required>
+                    <span id="firstNameError" class="text-danger"></span>
                 </div>
             </div>
         </div>
@@ -32,6 +33,7 @@ include "header.php"
                 </div>
                 <div class="col-sm-8">
                     <input type="text" class="form-control" id="last_name" placeholder="Enter your last name" name="last_name" required>
+                    <span id="lastNameError" class="text-danger"></span>
                 </div>
             </div>
         </div>
@@ -52,6 +54,7 @@ include "header.php"
                 </div>
                 <div class="col-sm-8">
                     <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                    <span id="emailError" class="text-danger"></span>
                 </div>
             </div>
         </div>
@@ -137,3 +140,59 @@ include "header.php"
 <?php
 include "footer.php"
 ?>
+
+
+
+<script>
+    //validate the First Name
+    function validateFirstName() {
+        const firstName = document.getElementById("first_name").value;
+        const firstNameError = document.getElementById("firstNameError");
+
+        if (firstName.length < 3 || firstName.length > 100) {
+            firstNameError.innerHTML = "First name must be between 3 and 100 characters!";
+            return false;
+        } else {
+            firstNameError.innerHTML = "";
+            return true;
+        }
+    }
+    document.getElementById("first_name").addEventListener("input", validateFirstName);
+</script>
+
+<script>
+    //validate the Last Name
+    function validateLastName() {
+        const lastName = document.getElementById("last_name").value;
+        const lastNameError = document.getElementById("lastNameError");
+
+        if (lastName.length < 3 || lastName.length > 100) {
+            lastNameError.innerHTML = "Last name must be between 3 and 100 characters!";
+            return false;
+        } else {
+            lastNameError.innerHTML = "";
+            return true;
+        }
+    }
+    document.getElementById("last_name").addEventListener("input", validateLastName);
+</script>
+
+<script>
+    // Validate the Email Address
+    function validateEmail() {
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+
+        if (!email.includes("@")) {
+            emailError.innerHTML = "Email must contain the @ symbol!";
+            return false;
+        } else {
+            emailError.innerHTML = "";
+            return true;
+        }
+    }
+
+    // Attach event listener for input event
+    document.getElementById("email").addEventListener("input", validateEmail);
+</script>
+
