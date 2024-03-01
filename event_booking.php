@@ -142,6 +142,7 @@ include "footer.php"
 ?>
 
 
+
 <script>
     //validate the First Name
     function validateFirstName() {
