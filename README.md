@@ -71,6 +71,27 @@ In the registration feature, the website will allow users to register with Asian
 #### 5. Handling services and booking events : <br>
 With the feature of services and event booking, website users can book their private events and access services through the website. When booking private events or accessing services, users are required to become members of the website first. If they are not members they will direct to registration form. <br>
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+GitHub link(customer booking event) :https://github.com/Yashodha8890/Web_Programming_Project/blob/main/event_booking.php, shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/event_booking.php <br>
+
+GitHub link (Customer booking edit page by customer): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/event_process.php ,shell.hamk.fi :http://shell.hamk.fi/~jayaneththi23000/project/event_process.php
+<br>
+
+GitHub link(customer booking event/ update and delete): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/manage_event.php , shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/manage_event.php?event_id=103
+<br>
+GitHub link(Admin booking event) :https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_events.php , Shell.hamk.fi : http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_events.php
+<br>
+GitHub link(Admin booking event update/delete): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_update_event.php , shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_update_event.php?event_id=99
+
+<br><br>
+GitHub link(Customer delivery oder): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/delivery.php , shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/delivery.php
+ 
+ <br>
+ GitHub link ( Admin delivery oder): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery.php , Shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php
+
+ GitHub link (Admin delivery oders update/delete):
+
+
+
 
 ### Feature 6
 
@@ -138,6 +159,16 @@ Validations : <br>
 2. JavaScript event listner validation for Quantity, Unit price, total price and order status. Quantity should not be empty or minus or 0, Unit price/Total Price should not be a minus(-) value, Order Status cannot be empty.<br><br>
 ![Update_order_details_js_validation](images/update_order_details_js_validations.PNG) <br>
 
+<br>
+Form 4: (Udashi Jayaneththi): Customer Event Booking: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/event_booking.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/event_booking.php (shell.hamk.fi). | Validations Applied<br>
+
+Form 5: (Udashi Jayaneththi): Customer event update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/manage_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/manage_event.php?event_id=104 (shell.hamk.fi). <br>
+
+Form 6: (Udashi Jayaneththi): Admin event booking update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_update_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_update_event.php?event_id=99 (shell.hamk.fi). <br>
+
+Form 7: (Udashi Jayaneththi): Delivery Odres: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/delivery.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/delivery.php (shell.hamk.fi). | Validations Applied<br>
+
+Form 8: (Udashi Jayaneththi): Admin delivery oders update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php (shell.hamk.fi). | <br>
 
 Form 4: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 
