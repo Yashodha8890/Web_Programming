@@ -33,6 +33,7 @@ if ($conn->query($sql) === TRUE) {
     $event_id = $conn->insert_id; // Get the ID of the newly inserted event
     
     echo "<div style='padding-left: 400px;padding-right:400px; padding-top: 20px; padding-bottom: 20px'>";
+    
     echo "<div class='container-booking'>";
     echo "<h1>Your event booking charges</h1><br>";
     echo "Customer Name: $first_name $last_name<br>";
