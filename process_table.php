@@ -74,7 +74,8 @@ if($conn -> query($sql)==TRUE)
         }
 
     echo "</tbody></table>";
-} else {
+} else 
+{
     // Display a message if no results are found
     echo "No results";
 }
