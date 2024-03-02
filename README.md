@@ -201,6 +201,7 @@ Table 3 (Yashodha Amarasinghe): oder_details [Link to the related code file](htt
 Table 4 (Mayuri Yashodha): Registration_form Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 5 (Mayuri Yashodha): table_reservation Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 6 (udashi Jayaneththi): events_booking Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
+
 Table 7 (udashi Jayaneththi): delivery Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 8 (Kapila Bandara): customer_feedback Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 9 (Kapila Bandara): restaurant_rating Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
