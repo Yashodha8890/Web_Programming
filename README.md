@@ -91,7 +91,7 @@ GitHub link(Customer delivery oder): https://github.com/Yashodha8890/Web_Program
  <br>
  GitHub link ( Admin delivery oder): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery.php , Shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php
 
- GitHub link (Admin delivery oders update/delete):
+ GitHub link (Admin delivery oders update/delete): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php , Shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery_update.php?delivery_id=25
 
 
 
@@ -215,9 +215,16 @@ Table 5 (Mayuri Yashodha): table_reservation [Link to the related code file](htt
 <br>Database table : table_reservation<br><br>
 ![db_table_table_reservation](images/TableReservationDB.png) <br>
 
-Table 6 (udashi Jayaneththi): events_booking Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
+Table 6 (udashi Jayaneththi): events_booking [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_events.php) | [Link to the table](http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_events.php)<br><br>
+![event_booking_table](images/event_booking_table.png) <br>
+<br>Database table : event_booking<br><br>
+![db_event_booking_table](images/db_event_booking_table.png) <br><br>
 
-Table 7 (udashi Jayaneththi): delivery Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
+Table 7 (udashi Jayaneththi): delivery [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery.php) | [Link to the table](http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php)<br><br>
+![delivery_table](images/delivery_table.png) <br>
+<br>Database table : delivery<br><br>
+![db_delivery_table](images/db_delivery_table.png) <br><br>
+
 Table 8 (Kapila Bandara): customer_feedback Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 9 (Kapila Bandara): restaurant_rating Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 
