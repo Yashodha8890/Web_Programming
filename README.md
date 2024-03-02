@@ -200,7 +200,10 @@ Table 3 (Yashodha Amarasinghe): oder_details [Link to the related code file](htt
 
 Table 4 (Mayuri Yashodha): Registration_form Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 5 (Mayuri Yashodha): table_reservation Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
-Table 6 (udashi Jayaneththi): events_booking Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
+Table 6 (udashi Jayaneththi): events_booking [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_events.php) | [Link to the table](http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_events.php)<br><br>
+![event_booking_table](images/event_booking_table.png) <br>
+<br>Database table : order_details<br><br>
+![db_event_booking_table](images/db_event_booking_table.png) <br>
 
 Table 7 (udashi Jayaneththi): delivery Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 8 (Kapila Bandara): customer_feedback Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
