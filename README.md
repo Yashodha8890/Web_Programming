@@ -161,14 +161,19 @@ Validations : <br>
 
 <br>
 Form 4: (Udashi Jayaneththi): Customer Event Booking: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/event_booking.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/event_booking.php (shell.hamk.fi). | Validations Applied<br>
+![event_booking_js_validation](images/event_booking_js_validation.png)<br>
 
-Form 5: (Udashi Jayaneththi): Customer event update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/manage_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/manage_event.php?event_id=104 (shell.hamk.fi). <br>
+Form 5: (Udashi Jayaneththi): Customer event update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/manage_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/manage_event.php?event_id=104 (shell.hamk.fi). | Validations Applied<br>
+![event_booking_update_delete_js_validation](images/event_booking_update_delete_js_validation.png)<br>
 
-Form 6: (Udashi Jayaneththi): Admin event booking update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_update_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_update_event.php?event_id=99 (shell.hamk.fi). <br>
+Form 6: (Udashi Jayaneththi): Admin event booking update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_update_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_update_event.php?event_id=99 (shell.hamk.fi). | Validations Applied <br>
+![event_admin_js_validation](images/event_admin_js_validation.png)<br>
 
 Form 7: (Udashi Jayaneththi): Delivery Odres: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/delivery.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/delivery.php (shell.hamk.fi). | Validations Applied<br>
+![delivery_js_validation](images/delivery_js_validation.png)<br>
 
 Form 8: (Udashi Jayaneththi): Admin delivery oders update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php (shell.hamk.fi). | <br>
+![delivery_admin](images/delivery_admin.png)<br>
 
 Form 4: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 
