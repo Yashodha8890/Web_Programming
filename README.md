@@ -64,8 +64,11 @@ GitHub link(Retriew Menu Items - From Line number 165-208 ) : https://github.com
 
 #### 4. Handling member resistration and member details Update/Delete : 
 Handling member resistration & login with different user levels : <br>
-In the registration feature, the website will allow users to register with Asian delight restaurant. A member ID is created for each registered user. A registered member can do other functions after logged into the account. By doing this, it is easy to administrators to manage user accounts and previlages.
-<br> Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+In the registration feature, the website will allow users to register with Asian delight restaurant. A member ID is created for each registered user. A registered member can do other functions after logged into the account. By doing this, it is easy to administrators to manage user accounts and previlages.<br>
+Provide links to related code files (github) & link to the feature (shell.hamk.fi) <br>
+GitHub link(User registration) : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/userRegistration.php ,
+shell.hamk.fi link (User registration): http://shell.hamk.fi/~mayuri23000/project/userRegistration.php <br>
+
 
 ### Feature 5
 #### 5. Handling services and booking events : <br>
@@ -102,6 +105,10 @@ In this feature, Collecting customer's Messages(Feedbacks),Complaints and review
 ### Feature 7
 
 #### 7. Handling Table reservation :
+By this feature, a customer can reserve a table for an event as well as customer can edit and delete the reservation by using member ID.<br>
+Provide links to related code files (github) & link to the feature (shell.hamk.fi) <br>
+GitHub link(Table reservation) : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/tablereservation.php ,
+shell.hamk.fi link (Table reservation): http://shell.hamk.fi/~mayuri23000/project/tablereservation.php <br>
 
 
 ### Feature 8
@@ -198,8 +205,16 @@ Table 3 (Yashodha Amarasinghe): oder_details [Link to the related code file](htt
 <br>Database table : order_details<br><br>
 ![db_table_order_details](images/tb_order_details.PNG) <br>
 
-Table 4 (Mayuri Yashodha): Registration_form Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
-Table 5 (Mayuri Yashodha): table_reservation Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
+Table 4 (Mayuri Yashodha): Registration_form [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/userRegistration.php) (github) | [Link to the table](http://shell.hamk.fi/~mayuri23000/project/userRegistration.php) (shell.hamk.fi).<br><br>
+![User_Registration](images/UserRegistration.png) <br>
+<br>Database table : User_Registration<br><br>
+![db_table_user_registration](images/UserRegistrationDB.png) <br>
+
+Table 5 (Mayuri Yashodha): table_reservation [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/tablereservation.php) (github) | [Link to the table](http://shell.hamk.fi/~mayuri23000/project/tablereservation.php) (shell.hamk.fi).<br><br>
+![table_reservation](images/ReserveTable.png) <br>
+<br>Database table : table_reservation<br><br>
+![db_table_table_reservation](images/TableReservationDB.png) <br>
+
 Table 6 (udashi Jayaneththi): events_booking [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_events.php) | [Link to the table](http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_events.php)<br><br>
 ![event_booking_table](images/event_booking_table.png) <br>
 <br>Database table : event_booking<br><br>
@@ -209,8 +224,6 @@ Table 7 (udashi Jayaneththi): delivery [Link to the related code file](https://g
 ![delivery_table](images/delivery_table.png) <br>
 <br>Database table : delivery<br><br>
 ![db_delivery_table](images/db_delivery_table.png) <br><br>
-
-
 
 Table 8 (Kapila Bandara): customer_feedback Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
 Table 9 (Kapila Bandara): restaurant_rating Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
