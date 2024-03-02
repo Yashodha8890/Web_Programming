@@ -950,12 +950,14 @@
                           <div class="form-floating">
                               <input type="text" class="form-control" id="name" name="cus_name" placeholder="Your Name" required>
                               <label for="name">Your Name</label>
+                              <p id="nameError"></p>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-floating">
                               <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                               <label for="email">Your Email</label>
+                              <p id="emailError"></p>
                           </div>
                       </div>
                       <div class="col-12">
@@ -972,7 +974,45 @@
                       </div>
                       <div class="col-12">
                           <button class="btn btn-primary w-100 py-3" type="submit" href="#contactUs" name="submit_feedback">Send Message</button>
-                      </div>
+                          <script>
+                                //js validate name
+                                function validatename() {
+                                const name= document.getElementById("name").value;
+                                const nameError = document.getElementById("nameError");
+            
+                                if(name.length <3 || name.length >20) {
+                                nameError.innerHTML ="Name must be between 3 and 20 charactors";
+                                return false; 
+                                } 
+
+                                else {
+                                nameError.innerHTML ="";
+                                return true;
+                                }
+
+                                }
+                                //js validate email
+                                function validateemail() {
+                                const email= document.getElementById("email").value;
+                                const emailError = document.getElementById("emailError");
+                                if (email === "" || !email.includes("@")){
+                                emailError.innerHTML ="Please enter a valid email address";
+                                return false;
+                                }
+
+                                else {
+                                emailError.innerHTML ="";
+                                return true;
+                                }
+
+                                } 
+             
+                                // event listeners for real time validation
+                                document.getElementById("name").addEventListener("input",validatename);
+                                document.getElementById("email").addEventListener("input",validateemail);
+                            </script>
+
+                        </div>
                   </div>
               </form><br><br>
               <div class="row g-3">
@@ -1028,6 +1068,7 @@
                           <div class="form-floating">
                               <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                               <label for="name">Your Name</label>
+                              <p id="nameError"></p>
                           </div>
                     </div>
                     <div class="row g-3">
@@ -1042,15 +1083,48 @@
                     <div class="row g-3">
                       <div class="col-12">
 
-                          <input type="number" class="form-control" id="subject" placeholder="Enter the rating" name="rating" required>
-                             
+                      <select type="number" class="form-control" id="subject" placeholder="Enter the rating" name="rating" required>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+
+                        <option>-1</option>
+                        <option>-2</option>
+                        <option>-3</option>
+                        <option>-4</option>
+                        <option>-5</option>
+                    </select>
+                    
                         </div>
                     </div>
-                      
-                      
+                    <script>
+                                //js validate name
+                                function validatename() {
+                                const name= document.getElementById("name").value;
+                                const nameError = document.getElementById("nameError");
+            
+                                if(name.length <3 || name.length >20) {
+                                nameError.innerHTML ="Name must be between 3 and 20 charactors";
+                                return false; 
+                                } 
+
+                                else {
+                                nameError.innerHTML ="";
+                                return true;
+                                }
+
+                                                      
+                                // event listeners for real time validation
+                                document.getElementById("name").addEventListener("input",validatename); 
+                            }   
+                    </script>          
+                   
                       <div class="col-12">
-                          <button class="btn btn-primary w-100 py-3" type="submit" href="#contactUs" name="submit_rating">Send Message</button>
-                      </div>
+                          <button class="btn btn-primary w-100 py-3" type="submit" href="#contactUs" name="submit_rating">Submit</button>
+                        </div>
                   </div>
               </form><br><br>
 
