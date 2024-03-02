@@ -161,6 +161,7 @@ Validations : <br>
 
 <br>
 Form 4: (Udashi Jayaneththi): Customer Event Booking: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/event_booking.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/event_booking.php (shell.hamk.fi). | Validations Applied<br>
+
 ![event_booking_js_validation](images/event_booking_js_validation.png)<br>
 
 Form 5: (Udashi Jayaneththi): Customer event update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/manage_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/manage_event.php?event_id=104 (shell.hamk.fi). | Validations Applied<br>
