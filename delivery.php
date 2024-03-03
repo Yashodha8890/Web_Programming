@@ -18,8 +18,10 @@ include "header.php"
                 <label for="delivery_address">Delivery Address:</label>
             </div>
             <div class="col-sm-4">
-                <input type="text" class="form-control" id="delivery_address" placeholder="Enter Delivery Address" name="delivery_address" required>
-            </div>
+    <input type="text" class="form-control" id="delivery_address" placeholder="Enter Delivery Address" name="delivery_address" required>
+    <span id="deliveryAddressError" class="text-danger"></span>
+      </div>
+
         </div>
         <div class="row">
             <div class="col-sm-2">
@@ -35,6 +37,7 @@ include "header.php"
                 <input type="time" class="form-control" id="delivery_time" name="delivery_time" required>
             </div>
         </div>
+
         <div class="row">
             <div class="col-sm-2">
                 <label for="delivery_method">Select Delivery Method:</label>
@@ -106,3 +109,24 @@ include "header.php"
 <?php
     include "footer.php"
     ?>
+
+
+<script>
+    // Validate the Delivery Address
+    function validateDeliveryAddress() {
+        const deliveryAddress = document.getElementById("delivery_address").value;
+        const deliveryAddressError = document.getElementById("deliveryAddressError");
+
+        if (deliveryAddress.trim() === "") {
+            deliveryAddressError.innerHTML = "Delivery address is required!";
+            return false;
+        } else if (deliveryAddress.length < 6 || deliveryAddress.length > 100) {
+            deliveryAddressError.innerHTML = "Address must be between 6 and 100 characters!";
+            return false;
+        } else {
+            deliveryAddressError.innerHTML = "";
+            return true;
+        }
+    }
+    document.getElementById("delivery_address").addEventListener("input", validateDeliveryAddress);
+</script>

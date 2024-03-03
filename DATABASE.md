@@ -17,7 +17,7 @@ ALTER TABLE `food_categories`
 CREATE TABLE `food_items` (
   `itemId` int NOT NULL,
   `categoryId` int NOT NULL,
-  `categoryName` varchar(100) NOT NULL,
+  `image` varchar(255) NOT NULL,
   `itemName` varchar(100) NOT NULL,
   `itemDescription` varchar(200) NOT NULL,
   `unitPrice` double NOT NULL
@@ -25,6 +25,9 @@ CREATE TABLE `food_items` (
 
 ALTER TABLE `food_items`
   ADD PRIMARY KEY (`itemId`);
+
+ALTER TABLE `food_items`
+  ADD CONSTRAINT `catergory_id` FOREIGN KEY (`categoryId`) REFERENCES `food_categories` (`categoryId`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- Table structure for table `oderDetails`
 
