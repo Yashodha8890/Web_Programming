@@ -183,13 +183,20 @@ Form 7: (Udashi Jayaneththi): Delivery Odres: https://github.com/Yashodha8890/We
 Form 8: (Udashi Jayaneththi): Admin delivery oders update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php (shell.hamk.fi). | <br>
 ![delivery_admin](images/delivery_admin.png)<br>
 
-Form 9: (Kapila Bandara): Customer Feedback: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
+Form 9: (Mayuri Yashodha): table reservation update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/update_reservation.php (github) | http://shell.hamk.fi/~mayuri23000/project/update_reservation.php (shell.hamk.fi). |Validations Applied<br>
+![update_reservation](images/update_reservation.png)<br>
+
+Form 10: (Mayuri Yashodha): table reservation : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/tablereservation.php (github) | http://shell.hamk.fi/~mayuri23000/project/tablereservation.php (shell.hamk.fi). |Validations Applied<br>
+![table_reservation](images/ReserveTable.png)<br>
+
+Form 11: (Mayuri Yashodha): member registration : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/userRegistration.php (github) | http://shell.hamk.fi/~mayuri23000/project/userRegistration.php (shell.hamk.fi). |Validations Applied<br>
+![member_registration](images/UserRegistration.png)<br>
+
+Form 12: (Kapila Bandara): Customer Feedback: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 ![customer_feedback](images/javascript%20feedback.png)
 
-Form 10: (Kapila Bandara): Customer Rating: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi). | Validations Applied<br>
+Form 13: (Kapila Bandara): Customer Rating: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi). | Validations Applied<br>
 ![customer_feedback](images/javascript%20feedback.png)
-
-Form 4: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 
 ## Created Tables
 List any tables that you have created in the project work<br>
@@ -233,7 +240,6 @@ Table 7 (udashi Jayaneththi): delivery [Link to the related code file](https://g
 
 Table 8 (Kapila Bandara): customer_feedback [Link to the related code file]:(https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php) (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi).<br><br>
 ![db_feedback_table](images/Admin_panel_feedback.png)<br><br>
-
 
 Table 9 (Kapila Bandara): customer_rating [Link to the related code file]:(https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php) (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi).<br><br>
 ![db_rating_table](images/admin_rating.png)<br><br>
