@@ -71,6 +71,7 @@ shell.hamk.fi link (User registration): http://shell.hamk.fi/~mayuri23000/projec
 
 
 ### Feature 5
+
 #### 5. Handling services and booking events : <br>
 With the feature of services and event booking, website users can book their private events and access services through the website. When booking private events or accessing services, users are required to become members of the website first. If they are not members they will direct to registration form. <br>
 <br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
@@ -93,14 +94,13 @@ GitHub link(Customer delivery oder): https://github.com/Yashodha8890/Web_Program
 
  GitHub link (Admin delivery oders update/delete): https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php , Shell.hamk.fi link: http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery_update.php?delivery_id=25
 
-
-
-
 ### Feature 6
 
 #### 6. Handling customer feedbacks and ratings : <br>
-In this feature, Collecting customer's Messages(Feedbacks),Complaints and reviews. If the user is not a registered member refer to the register form.The admin can view,update and delete customers feedback.<br>
-<br>Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+In this feature, Collecting customer's Messages(Feedbacks),Complaints and reviews. In Addition, there is a customer rating section available. in this section customer can give a rating between 5 to -5 and can select as postive or negative as well.The admin can view,update and delete customers feedback and rating.<br>
+<br><br>
+GitHub Link(Customer Feedback and Rating):https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php,
+shell.hamk.fi(Customer Feedback and Rating):http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs
 
 ### Feature 7
 
@@ -183,6 +183,12 @@ Form 7: (Udashi Jayaneththi): Delivery Odres: https://github.com/Yashodha8890/We
 Form 8: (Udashi Jayaneththi): Admin delivery oders update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php (shell.hamk.fi). | <br>
 ![delivery_admin](images/delivery_admin.png)<br>
 
+Form 9: (Kapila Bandara): Customer Feedback: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
+![customer_feedback](images/javascript%20feedback.png)
+
+Form 10: (Kapila Bandara): Customer Rating: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi). | Validations Applied<br>
+![customer_feedback](images/javascript%20feedback.png)
+
 Form 4: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 
 ## Created Tables
@@ -225,6 +231,9 @@ Table 7 (udashi Jayaneththi): delivery [Link to the related code file](https://g
 <br>Database table : delivery<br><br>
 ![db_delivery_table](images/db_delivery_table.png) <br><br>
 
-Table 8 (Kapila Bandara): customer_feedback Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
-Table 9 (Kapila Bandara): restaurant_rating Link to the related code file (github) | Link to the table (shell.hamk.fi).<br><br>
+Table 8 (Kapila Bandara): customer_feedback [Link to the related code file]:(https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php) (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi).<br><br>
+![db_feedback_table](images/Admin_panel_feedback.png)<br><br>
 
+
+Table 9 (Kapila Bandara): customer_rating [Link to the related code file]:(https://github.com/Yashodha8890/Web_Programming_Project/blob/main/index.php) (github) | http://shell.hamk.fi/~kapila23000/Web_Programming_Project/index.php#contactUs (shell.hamk.fi).<br><br>
+![db_rating_table](images/admin_rating.png)<br><br>
