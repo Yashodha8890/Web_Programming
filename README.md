@@ -183,7 +183,15 @@ Form 7: (Udashi Jayaneththi): Delivery Odres: https://github.com/Yashodha8890/We
 Form 8: (Udashi Jayaneththi): Admin delivery oders update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php (shell.hamk.fi). | <br>
 ![delivery_admin](images/delivery_admin.png)<br>
 
-Form 4: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
+Form 9: (Mayuri Yashodha): table reservation update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/update_reservation.php (github) | http://shell.hamk.fi/~mayuri23000/project/update_reservation.php (shell.hamk.fi). |Validations Applied<br>
+![update_reservation](images/update_reservation.png)<br>
+
+Form 10: (Mayuri Yashodha): table reservation : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/tablereservation.php (github) | http://shell.hamk.fi/~mayuri23000/project/tablereservation.php (shell.hamk.fi). |Validations Applied<br>
+![table_reservation](images/ReserveTable.png)<br>
+
+Form 11: (Mayuri Yashodha): member registration : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/userRegistration.php (github) | http://shell.hamk.fi/~mayuri23000/project/userRegistration.php (shell.hamk.fi). |Validations Applied<br>
+![member_registration](images/UserRegistration.png)<br>
+
 
 ## Created Tables
 List any tables that you have created in the project work<br>
