@@ -1100,13 +1100,15 @@
                     
                         </div>
                     </div>
-                    <script>
+                        <script>
                                 //js validate name
-                                function validatename() {
+                                function validatename() 
+                                {
                                 const name= document.getElementById("name").value;
                                 const nameError = document.getElementById("nameError");
             
-                                if(name.length <3 || name.length >20) {
+                                if(name.length <3 || name.length >20) 
+                                {
                                 nameError.innerHTML ="Name must be between 3 and 20 charactors";
                                 return false; 
                                 } 
