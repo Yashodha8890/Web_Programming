@@ -5,7 +5,6 @@ include '../config/db.php';
 // $sql = "SELECT * FROM customer_feedback where message_type='feedback'";
 $sql = "SELECT * FROM customer_feedback";
 
-
 // Execute the SQL query and store the result
 $result = $conn->query($sql);
 

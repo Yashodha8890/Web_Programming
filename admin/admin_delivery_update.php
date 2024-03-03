@@ -14,7 +14,10 @@ if (isset($_GET['delivery_id'])) {
 
 ?>
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 <h2 class="text-center"> Update your information below: </h2>
 <br>
 <div class="container container-delivery">

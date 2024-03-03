@@ -33,6 +33,7 @@ if(isset($_GET['event_id'])) {
                 <input type="text" class="form-control" id="member_id" name="member_id" value="<?php echo $row['member_id']; ?>">
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -40,15 +41,18 @@ if(isset($_GET['event_id'])) {
                 </div>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" id="first_name" name="first_name" value="<?php echo $row['first_name']; ?>">
+                    <span id="firstNameError" class="text-danger"></span>
                 </div>
                 <div class="col-sm-1">
                     <label for="last_name">Last Name:</label>
                 </div>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" id="last_name" name="last_name" value="<?php echo $row['last_name']; ?>">
+                    <span id="lastNameError" class="text-danger"></span>
                 </div>
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -62,9 +66,11 @@ if(isset($_GET['event_id'])) {
                 </div>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" id="email" name="email" value="<?php echo $row['email']; ?>">
+                    <span id="emailError" class="text-danger"></span>
                 </div>
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -72,10 +78,10 @@ if(isset($_GET['event_id'])) {
                 </div>
                 <div class="col-sm-4">
                     <select class="form-control" id="select_room" name="select_room">
-                        <option value="BBCAP19" <?php if($row['select_room'] == 'BBCAP19') echo 'selected'; ?>>BBCAP19</option>
-                        <option value="BBCAP20" <?php if($row['select_room'] == 'BBCAP20') echo 'selected'; ?>>BBCAP20</option>
-                        <option value="BBCAP21" <?php if($row['select_room'] == 'BBCAP21') echo 'selected'; ?>>BBCAP21</option>
-                        <option value="BBCAP22" <?php if($row['select_room'] == 'BBCAP22') echo 'selected'; ?>>BBCAP22</option>
+                        <option value="BBCAP19" <?php if($row['select_room'] == 'BBCAP19') echo 'selected'; ?>>Select Room</option>
+                        <option value="BBCAP20" <?php if($row['select_room'] == 'BBCAP20') echo 'selected'; ?>>Small</option>
+                        <option value="BBCAP21" <?php if($row['select_room'] == 'BBCAP21') echo 'selected'; ?>>Medium</option>
+                        <option value="BBCAP22" <?php if($row['select_room'] == 'BBCAP22') echo 'selected'; ?>>Large</option>
                         <option value="Others" <?php if($row['select_room'] == 'Others') echo 'selected'; ?>>Others</option>
                     </select>
                 </div>
@@ -103,6 +109,7 @@ if(isset($_GET['event_id'])) {
                 </div>
             </div>
         </div>
+        <br>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-1">
@@ -124,6 +131,7 @@ if(isset($_GET['event_id'])) {
                 </div>
             </div>
         </div>
+        <br><br>
 
         <div class="row justify-content-center">
             <div class="col-sm-1 text-center">  
@@ -194,3 +202,59 @@ $conn->close();
 ?>
 
 <?php include 'footer.php';?>
+
+<script>
+    //validate the First Name
+    function validateFirstName() {
+        const firstName = document.getElementById("first_name").value;
+        const firstNameError = document.getElementById("firstNameError");
+
+        if (firstName.length < 3 || firstName.length > 100) {
+            firstNameError.innerHTML = "First name must be between 3 and 100 characters!";
+            return false;
+        } else {
+            firstNameError.innerHTML = "";
+            return true;
+        }
+    }
+    document.getElementById("first_name").addEventListener("input", validateFirstName);
+</script>
+
+<script>
+    //validate the Last Name
+    function validateLastName() {
+        const lastName = document.getElementById("last_name").value;
+        const lastNameError = document.getElementById("lastNameError");
+
+        if (lastName.length < 3 || lastName.length > 100) {
+            lastNameError.innerHTML = "Last name must be between 3 and 100 characters!";
+            return false;
+        } else {
+            lastNameError.innerHTML = "";
+            return true;
+        }
+    }
+    document.getElementById("last_name").addEventListener("input", validateLastName);
+</script>
+
+
+<script>
+    // Validate the Email Address
+    function validateEmail() {
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+
+        if (!email.includes("@")) {
+            emailError.innerHTML = "Email must contain the @ symbol!";
+            return false;
+        } else {
+            emailError.innerHTML = "";
+            return true;
+        }
+    }
+
+    // Attach event listener for input event
+    document.getElementById("email").addEventListener("input", validateEmail);
+</script>
+
+
