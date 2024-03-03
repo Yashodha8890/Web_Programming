@@ -75,9 +75,56 @@ Include the ER Diagram of the database.<br><br>
 ## Created Forms
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
+<<<<<<< Updated upstream
 Form 1 (Yashodha Amarasinghe): Add food Categories and items: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 Form 2: (Yashodha Amarasinghe): Update Food items: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
 Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied<br>
+=======
+Form 1: (Yashodha Amarasinghe): Add food Categories and items: [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/add_categories_and_item.php) (github) | [Link to the form](http://localhost:81/Web_Programming_Project/admin/add_categories_and_item.php) (shell.hamk.fi). | Validations Applied<br>
+In this page there are two forms created, one form is used to insert food categories(Sri Lankan/Indian/Malaysian etc..) to the database food_categories table. while other form is used to insert food items to the database food_items table. Food items will be mapped with the food category. Cannot be inserted any item without selecting a food category due to the foriegn key constraints. <br>
+Validations : <br>
+1. HTML validations for required data in the add food items form (Item Name/Item Category/Unit price - required, item name/Item Description - minlength & maxlength)<br>
+2. JavaScript event listner validation for Item Name and Unit price. Item name should have number of characters between 3 and 100, Unit price should not be a minus(-) value.<br><br>
+![Add_food_Items_js_validation](images/add_item_js_validations.PNG) <br>
+
+Form 2: (Yashodha Amarasinghe): Update Food items: [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/update_food_items.php) (github) | [Link to the form](http://shell.hamk.fi/~yashodha23000/Web_Programming_Project/admin/update_food_items.php?itemId=1) (shell.hamk.fi). | Validations Applied<br>
+Validations : <br>
+1. HTML validations for required data in the update food items form (Item_Id/Category_Id - Disabled editing, Item Name/Item Category/Unit price - required, item name/Item Description - minlength & maxlength)<br>
+2. JavaScript event listner validation for Item Name and Unit price. Item name should have number of characters between 3 and 100, Unit price should not be a minus(-) value.<br><br>
+![Update_food_Items_js_validation](images/update_food_items_js_validations.PNG) <br>
+
+Form 3: (Yashodha Amarasinghe): Update order details : [Link to the related code file](https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/manage_orders.php) (github) | [Link to the form](http://shell.hamk.fi/~yashodha23000/Web_Programming_Project/admin/manage_orders.php?orderNo=1) (shell.hamk.fi). | Validations Applied<br>
+Validations : <br>
+1. HTML validations for required data in the update order details form (Item Name/Item Category/Unit price - required, Item_Id/Category_Id/member_id - Disabled editing, Description - minlength & maxlength)<br>
+2. JavaScript event listner validation for Quantity, Unit price, total price and order status. Quantity should not be empty or minus or 0, Unit price/Total Price should not be a minus(-) value, Order Status cannot be empty.<br><br>
+![Update_order_details_js_validation](images/update_order_details_js_validations.PNG) <br>
+
+<br>
+Form 4: (Udashi Jayaneththi): Customer Event Booking: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/event_booking.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/event_booking.php (shell.hamk.fi). | Validations Applied<br>
+
+![event_booking_js_validation](images/event_booking_js_validation.png)<br>
+
+Form 5: (Udashi Jayaneththi): Customer event update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/manage_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/manage_event.php?event_id=104 (shell.hamk.fi). | Validations Applied<br>
+![event_booking_update_delete_js_validation](images/event_booking_update_delete_js_validation.png)<br>
+
+Form 6: (Udashi Jayaneththi): Admin event booking update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_update_event.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_update_event.php?event_id=99 (shell.hamk.fi). | Validations Applied <br>
+![event_admin_js_validation](images/event_admin_js_validation.png)<br>
+
+Form 7: (Udashi Jayaneththi): Delivery Odres: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/delivery.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/delivery.php (shell.hamk.fi). | Validations Applied<br>
+![delivery_js_validation](images/delivery_js_validation.png)<br>
+
+Form 8: (Udashi Jayaneththi): Admin delivery oders update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/admin/admin_delivery_update.php (github) | http://shell.hamk.fi/~jayaneththi23000/project/admin/admin_delivery.php (shell.hamk.fi). | <br>
+![delivery_admin](images/delivery_admin.png)<br>
+
+Form 9: (Mayuri Yashodha): table reservation update and delete: https://github.com/Yashodha8890/Web_Programming_Project/blob/main/update_reservation.php (github) | http://shell.hamk.fi/~mayuri23000/project/update_reservation.php (shell.hamk.fi). |Validations Applied<br>
+![update_reservation](images/update_reservation.png)<br>
+
+Form 10: (Mayuri Yashodha): table reservation : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/tablereservation.php (github) | http://shell.hamk.fi/~mayuri23000/project/tablereservation.php (shell.hamk.fi). |Validations Applied<br>
+![table_reservation](images/ReserveTable.png)<br>
+
+Form 11: (Mayuri Yashodha): member registration : https://github.com/Yashodha8890/Web_Programming_Project/blob/main/userRegistration.php (github) | http://shell.hamk.fi/~mayuri23000/project/userRegistration.php (shell.hamk.fi). |Validations Applied<br>
+![member_registration](images/UserRegistration.png)<br>
+>>>>>>> Stashed changes
 
 ## Created Tables
 List any tables that you have created in the project work<br>

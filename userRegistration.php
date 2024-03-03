@@ -10,7 +10,7 @@
                     <label>First Name:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="text" name="firstname" placeholder="First name" ><br><br>
+                    <input class="registration-form-input" type="text" name="firstname" placeholder="First name" required ><br><br>
                     </div> 
                 </div>
 
@@ -19,7 +19,7 @@
                     <label>Last Name:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="text" name="lastname" placeholder="Last name" ><br><br>
+                    <input class="registration-form-input" type="text" name="lastname" placeholder="Last name" required ><br><br>
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@
                     <label>Contact Number:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="number" name="contactnumber" placeholder="Contact Number" ><br><br>
+                    <input class="registration-form-input" type="number" name="contactnumber" placeholder="Contact Number" required ><br><br>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                     <label>Email:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="email" name="email" placeholder="Email" ><br><br>
+                    <input class="registration-form-input" type="email" name="email" placeholder="Email" required ><br><br>
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                     <label>Address:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="text" name="address" placeholder="Address" ><br><br>
+                    <input class="registration-form-input" type="text" name="address" placeholder="Address" required ><br><br>
                     </div>
                 </div>
                 <!-- <div class="form-group">
@@ -67,7 +67,7 @@
                     <label>User Name:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="text" name="user_name" placeholder="User Name" ><br><br>
+                    <input class="registration-form-input" type="text" name="user_name" placeholder="User Name" required ><br><br>
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@
                     <label>Password:</label>
                     </div>
                     <div class="col-sm-8">
-                    <input class="registration-form-input" type="password" name="pass_word" placeholder="Password" ><br><br>
+                    <input class="registration-form-input" type="password" name="pass_word" placeholder="Password" required ><br><br>
                     </div>
                 </div>
                 <div class="row">
